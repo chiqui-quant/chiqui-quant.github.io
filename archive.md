@@ -2,4 +2,4 @@
 
 # Archive
 
-* [How I made this website in 1 day](/_articles/article1) (2022-06-25)
+* [How I made this website in 1 day](/articles/article1) (2022-06-25)
