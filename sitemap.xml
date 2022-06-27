@@ -3,55 +3,61 @@
 
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/about/index.html</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/franklin/index.html</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/quotes/index.html</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/topics/index.html</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/404/index.html</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/articles/article1/index.html</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/archive/index.html</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://tlienart.github.io/FranklinTemplates.jl/articles/article3/index.html</loc>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/articles/article2/index.html</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/index/</loc>
-    <lastmod>2022-06-26</lastmod>
+    <lastmod>2022-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
