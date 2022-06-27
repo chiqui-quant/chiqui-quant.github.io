@@ -3,7 +3,7 @@
 ================================================================== */
 
 :root {
-  --block-background: hsl(0, 0%, 94%);
+  --block-background: hsl(215, 100%, 91%);
   --output-background: hsl(0, 0%, 98%);
   --small: 14px;
   --normal: 16px;
@@ -46,7 +46,7 @@ html {
 .franklin-content .footnote {
   position: relative;
   top: -0.5em;
-  font-size: 70%;
+  font-size: 90%;
 }
 
 /* ==================================================================
@@ -160,17 +160,18 @@ h6 {
 
 .franklin-content th,
 td {
-  font-size: var(--small);
+  font-size: var(--normal);
   padding: 10px;
   border: 1px solid black;
 }
 
 .franklin-content blockquote {
   background: var(--block-background);
-  border-left: 7px solid #a8a8a8;
+  border-left: 7px solid #1ea1d5;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   font-style: italic;
+  font-size: var(--normal);
 }
 
 .franklin-content blockquote p {
@@ -218,21 +219,22 @@ td {
   padding: 0;
   border: 0;
   text-align: left;
+  font-size: var(--normal);
 }
 
-.franklin-content .fndef tr {
+/* .franklin-content .fndef tr {
   border-left: 2px solid lightgray;
-}
+} */
 
 .franklin-content .fndef td.fndef-backref {
   vertical-align: top;
-  font-size: 70%;
+  font-size: 100%;
   padding-left: 5px;
 }
 
 .franklin-content .fndef td.fndef-content {
-  font-size: 80%;
-  padding-left: 10px;
+  font-size: 90%;
+  padding-left: 5px;
   width: 100%;
 }
 
