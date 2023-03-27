@@ -1,4 +1,3 @@
-
 @def title = ["article2"]
 @def tags = ["life"]
 
