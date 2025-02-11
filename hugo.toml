@@ -2,6 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
+# Theme 2
 theme = "hugo-blog-awesome"
 
 # This defines how dates are formatted
@@ -67,6 +68,7 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
   [[Languages.en-gb.menu.main]]
     pageRef="about"
     name = 'About'
+    # url = '/about/'
     url = '/about/'
     weight = 30
 

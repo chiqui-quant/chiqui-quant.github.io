@@ -1,41 +1,79 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on My New Hugo Site</title>
+    <title>My New Hugo Site</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Home on My New Hugo Site</description>
+    <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <title></title>
+      <link>http://localhost:1313/posts/2025-02-11-second-post/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/2025-02-11-second-post/</guid>
       
-      <description>&lt;p&gt;This is my first post!
-$$\mathcal{F}(f)(\xi)=\int_{\mathbb{R}^{d}} e^{-i\xi\cdot x}f(x)dx$$&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What are some additional examples of normed spaces? $(\mathscr{C}(I),\lVert \cdot \rVert_{1,1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1,\infty})$, $(\mathscr{C}&lt;em&gt;{0}^{1}(I),\lVert \cdot \rVert&lt;/em&gt;{1})$.&lt;/li&gt;
+&lt;li&gt;What is an open/closed ball and an open/closed set?&lt;/li&gt;
+&lt;li&gt;Why an open ball is an open set?&lt;/li&gt;
+&lt;li&gt;What are some properties about unions and intersections of open and closed sets? (What are 2 examples that we have seen in $\mathbb{R}$ with $\left|\cdot \right|$)?&lt;/li&gt;
+&lt;li&gt;What is a sequence? What is a subsequence? When do we say that a sequence converges in a normed space? What is the first theorem that we have seen about the convergence of sequences in a normed space?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example.&lt;/strong&gt; $I=[a,b]\subset \mathbb{R}$, $\mathscr{C}^{1}(I)={f:I\to\mathbb{R}\text{ continuously differentiable}}$ (recall that a continuously differentiable function $f(x)$ is a function whose derivative function $f&amp;rsquo;(x)$ is also continuous at the point in question). Set
+$$\lVert f \rVert_{1,1}=\int_{a}^{b}\left|f(t)\right|dt+\int_{a}^{b} \left|f&amp;rsquo;(t)\right|dt\qquad \qquad \lVert f \rVert_{1, \infty}=\sup_{t\in  I}(\left|f(t)\right|+\left|f&amp;rsquo;(t)\right|)$$
+then $\lVert \cdot  \rVert_{1,1}$ and $\lVert \cdot  \rVert_{1, \infty}$ are norms on $\mathscr{C}^{1}(I)$. Note: without the parts with the derivatives they are only seminorms on $\mathscr{C}^{1}(I)$ (Q: why? how? What is that fails?). Note also that
+$$\lVert f \rVert_{1}=\int_{a}^{b} \left|f&amp;rsquo;(t)\right|dt\ \ \text{ and}\ \ \lVert f \rVert_{\infty}=\sup_{t\in  I}\left|f&amp;rsquo;(t)\right|$$
+are seminorms on $\mathscr{C}^{1}$. &lt;strong&gt;Exercise.&lt;/strong&gt; Check it! Help:
+$$\lVert f \rVert_{1}=0\iff\int_{a}^{b} \left|f&amp;rsquo;(t)\right|dt=0\iff  \left|f&amp;rsquo;(t)\right|=0\ \ \forall \  t\in  I\iff  f&amp;rsquo;(t)=0\ \ \forall \  t\in  I$$
+which happens if and only if $f(t)$ is constant (not necessarily zero!).&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/2025-02-11-my-first-post/</link>
+      <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/2025-02-11-my-first-post/</guid>
+      
+      <description>&lt;p&gt;&lt;strong&gt;Big Disclaimer:&lt;/strong&gt; I would like to improve the notes in some future with better explanations, but for now this is the best I can provide, I hope it will still be useful for you.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is functional analysis?&lt;/li&gt;
+&lt;li&gt;What is a vector space?&lt;/li&gt;
+&lt;li&gt;What is a norm?&lt;/li&gt;
+&lt;li&gt;What is a normed space?&lt;/li&gt;
+&lt;li&gt;What are some examples of normed spaces? $(\mathbb{R}^{n},\lVert \cdot \rVert_{e})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{1})$, $(\mathbb{R}^{n},\lVert \cdot  \rVert_{\infty})$, $(\ell^{1}(\mathbb{N}),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{\infty})$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Personal Introduction: this is the set of lecture notes on Analysis B (basic), given by prof. Bertrand Lods during 2021/2022. They are written in an unpolished way and I hope to improve them with time and suggestions. They are intended for the student who started appreciating math quite late (like me) and lacks the mathematical familiarity or maturity that one usually develops during a bachelor in Mathematics but also can&amp;rsquo;t wait to have a glance at more advanced stuff. For this reason, the approach I used was basically to transcribe everything the professor wrote and said, which allowed me to gradually become more familiar with how to read and interpret the mathematical notation. In retrospect it really represents a good example of trying to kill a fly with a bazooka, the format of the notes is considerably bloated (my fault). This helped me understand why math is the way it is, and why mathematics makes use of all its strange symbols, to achieve a great deal of compression of ideas. Depite its difficulty and increasing abstractness, do not feel discouraged, the scope of this course is not to perfectly understand and remember all the results, but rather to get in touch with some important ideas and understand why and how some technical difficulties emerge (elaborate more). For a condensed version of the notes there are already the lecture notes provided by the professor, this can be considered as the long-form version, for those who want to dig deeper.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/pages/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       
-      <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
-&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This place is meant to be a repository of serendipitous thoughts, a place to elaborate and share the ideas I have in mind at a given point in time. In ancient Greece it was used to define &amp;ldquo;hypomnemata&amp;rdquo; as the activity of recording thoughts, experiences and curiosities for later synthesis and reflection. Therefore, what you will find here are not absolute unchangable truths, but an evolution of views on a variety of topics.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lecture Notes</title>
+      <link>http://localhost:1313/pages/lecturenotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/lecturenotes/</guid>
+      
+      <description>&lt;ul&gt;
+&lt;li&gt;Functional Analysis&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
       
     </item>
     
