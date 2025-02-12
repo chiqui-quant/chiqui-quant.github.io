@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on My New Hugo Site</title>
-    <link>http://localhost:38253/pages/</link>
-    <description>Recent content in Pages on My New Hugo Site</description>
+    <title>Pages on Chiqui Quant</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on Chiqui Quant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:38253/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://localhost:38253/pages/fa/fa01/</link>
+      <link>http://localhost:1313/pages/fa/fa01/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:38253/pages/fa/fa01/</guid>
+      <guid>http://localhost:1313/pages/fa/fa01/</guid>
       
       <description>&lt;p&gt;This will be our first lecture.&lt;/p&gt;</description>
       
@@ -20,24 +20,32 @@
     
     <item>
       <title>Preface</title>
-      <link>http://localhost:38253/pages/fa/fa00/</link>
+      <link>http://localhost:1313/pages/fa/fa00/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:38253/pages/fa/fa00/</guid>
+      <guid>http://localhost:1313/pages/fa/fa00/</guid>
       
-      <description>&lt;p&gt;Here is some introduction.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;The following is a sequence of lecture notes from the course of Functional Analysis B(asic) from the M.Sc. in Stochastics and Data Science, given by prof. Bertrand Lods during 2021/2022. The motivation for publishing them in this blog serves multiple purposes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) to review what I think was one of the most challenging yet enjoyable courses I ever took&lt;/li&gt;
+&lt;li&gt;(2) to learn and practice a bit more of git version control in general&lt;/li&gt;
+&lt;li&gt;(3) to find the right balance between &amp;ldquo;overly verbal&amp;rdquo; and &amp;ldquo;puzzling condensed&amp;rdquo; notes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Regarding (1), I noticed that by reviewing the entire course material from start to finish multiple times usually allows me to understand better some parts or add and clarify details that I missed. For instance, now that I have some more experience and familiarity with the subject, almost two years, when I reviewed the very first lecture the other day, I was able to solve the proposed exercises, for which I felt completely lost the first time I wrote them down.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Lecture Notes</title>
-      <link>http://localhost:38253/pages/lecturenotes/</link>
+      <link>http://localhost:1313/pages/lecturenotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:38253/pages/lecturenotes/</guid>
+      <guid>http://localhost:1313/pages/lecturenotes/</guid>
       
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:38253/pages/fa/fa00/&#34;&gt;Functional Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/fa/fa00/&#34;&gt;Functional Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
       
     </item>
