@@ -2,116 +2,116 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:38243/posts/2025-02-11-my-first-post/</loc>
+    <loc>http://localhost:1313/posts/2025-02-11-second-post/</loc>
     <lastmod>2025-02-11T12:29:26+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:38243/</loc>
+    <loc>http://localhost:1313/posts/2025-02-11-my-first-post/</loc>
+    <lastmod>2025-02-11T12:29:26+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-11T12:29:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="http://localhost:38243/de-de/"
+                href="http://localhost:1313/de-de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-fr"
-                href="http://localhost:38243/fr-fr/"
+                href="http://localhost:1313/fr-fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:38243/pt-br/"
+                href="http://localhost:1313/pt-br/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-ru"
-                href="http://localhost:38243/ru-ru/"
+                href="http://localhost:1313/ru-ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:38243/it/"
+                href="http://localhost:1313/it/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-gb"
-                href="http://localhost:38243/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:38243/posts/2025-02-11-second-post/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-02-11T12:29:26+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:38243/posts/</loc>
-    <lastmod>2025-02-11T12:29:26+01:00</lastmod>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:38243/about/</loc>
-  </url><url>
-    <loc>http://localhost:38243/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="http://localhost:38243/de-de/categories/"
+                href="http://localhost:1313/de-de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-fr"
-                href="http://localhost:38243/fr-fr/categories/"
+                href="http://localhost:1313/fr-fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:38243/pt-br/categories/"
+                href="http://localhost:1313/pt-br/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-ru"
-                href="http://localhost:38243/ru-ru/categories/"
+                href="http://localhost:1313/ru-ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:38243/it/categories/"
+                href="http://localhost:1313/it/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-gb"
-                href="http://localhost:38243/categories/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://localhost:38243/pages/lecturenotes/</loc>
+    <loc>http://localhost:1313/pages/lecturenotes/</loc>
   </url><url>
-    <loc>http://localhost:38243/pages/</loc>
+    <loc>http://localhost:1313/pages/</loc>
   </url><url>
-    <loc>http://localhost:38243/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-de"
-                href="http://localhost:38243/de-de/tags/"
+                href="http://localhost:1313/de-de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-fr"
-                href="http://localhost:38243/fr-fr/tags/"
+                href="http://localhost:1313/fr-fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:38243/pt-br/tags/"
+                href="http://localhost:1313/pt-br/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-ru"
-                href="http://localhost:38243/ru-ru/tags/"
+                href="http://localhost:1313/ru-ru/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:38243/it/tags/"
+                href="http://localhost:1313/it/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-gb"
-                href="http://localhost:38243/tags/"
+                href="http://localhost:1313/tags/"
                 />
   </url>
 </urlset>

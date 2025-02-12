@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=38243&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en-gb" />
 <meta name="language" content="en-gb" />
 
-  <link rel="alternate" hreflang="en-gb" href="http://localhost:38243/posts/2025-02-11-my-first-post/" title="English" />
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/posts/2025-02-11-my-first-post/" title="English" />
 
 
 
@@ -31,7 +31,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2025-02-11T12:29:26&#43;0100 />
     <meta property="article:published_time" content=2025-02-11T12:29:26&#43;0100 />
-    <meta property="og:url" content="http://localhost:38243/posts/2025-02-11-my-first-post/" />
+    <meta property="og:url" content="http://localhost:1313/posts/2025-02-11-my-first-post/" />
 
     
     <meta property="og:article:author" content="Sidharth R" />
@@ -53,7 +53,7 @@
         },
         "datePublished": "2025-02-11",
         "description": "",
-        "wordCount":  3540 ,
+        "wordCount":  2707 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-02-11",
         "image": {
@@ -71,7 +71,7 @@
 <meta name="generator" content="Hugo 0.143.1">
 
     
-    <meta property="og:url" content="http://localhost:38243/posts/2025-02-11-my-first-post/">
+    <meta property="og:url" content="http://localhost:1313/posts/2025-02-11-my-first-post/">
   <meta property="og:site_name" content="My New Hugo Site">
   <meta property="og:title" content="My First Post">
   <meta property="og:description" content="Big Disclaimer: I would like to improve the notes in some future with better explanations, but for now this is the best I can provide, I hope it will still be useful for you.
@@ -95,7 +95,7 @@ What is functional analysis? What is a vector space? What is a norm? What is a n
 
     
 
-    <link rel="canonical" href="http://localhost:38243/posts/2025-02-11-my-first-post/">
+    <link rel="canonical" href="http://localhost:1313/posts/2025-02-11-my-first-post/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -109,7 +109,7 @@ What is functional analysis? What is a vector space? What is a norm? What is a n
 
 
 
-<link rel="manifest" href="http://localhost:38243/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
 
 <meta name="msapplication-config" content="/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -117,6 +117,21 @@ What is functional analysis? What is a vector space? What is a norm? What is a n
 
     
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+ 
 
     
     
@@ -127,7 +142,7 @@ What is functional analysis? What is a vector space? What is a norm? What is a n
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
-        <a href="http://localhost:38243/" class="logo">
+        <a href="http://localhost:1313/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -238,17 +253,7 @@ stroke-linejoin="round" class="feather feather-home">
 <li>SUM (addition): given $x,y\in X$ we can define a third element $x+y\in X$ which is the sum of $x$ and $y$.</li>
 <li>SCALAR MULTIPLICATION: given $x\in X$, $\alpha \in \mathbb{K}$ we can define $\alpha \cdot  x\in X$ (i.e. the product of $\alpha\in \mathbb{K}$ with $x\in X$).</li>
 </ul>
-<p>And the two operations are such that (they satisfy the following properties):<br>
-(0) If you take $x\in X$, $y\in X$ (the operation is still inside), $\Rightarrow x+y\in X$. If you take $x\in X,\lambda \in \mathbb{K}\Rightarrow \alpha \cdot x\in X$ (the scaled element still belongs to $X$).<br>
-(1) Commutativity of $+$: $x+y=y+x \ \ \forall \  x,y\in X$ (that element is the same thing, but life is not like this, life is not commutative at all, the operations you make in life are not commutative, it is not the same if you put first your underwear and then your pants, than putting first your pants and then the underwear, you would look very different).<br>
-(2) Associativity of +: $(x+y)+z=x+(y+z)\ \ \forall \ x,y,z\in X$ (the order of the sum doen&rsquo;t even count if you make the sum of 3 elements). ($x+y$ produce someone in $X$&hellip;)<br>
-(3) Neutral element of +: there is a neutral element, that we call $0_{X}\in X$ &ldquo;the zero of $X$&rdquo;, with respect to the sum such that $0_{X}+x=x+0_{X}=x\ \ \forall \ x\in X$. (the zero is the element which summed to another element gives the element itself).<br>
-(4) Uniqueness: there is a unique element $y=-x\in X$ (this is just notation) (or if you prefer $z_{x}\in X$) such that $x+y=0_{X}=y+x\ \ \forall \ x\in X$. (or $x+z_{x}=0_{X}=z_{x}+x$ and we will write $z_{x}=-x$) (is it possible to sum $x$ with someone to obtain the neutral element?) There is no subtraction, just the sum of the opposite.<br>
-(5) Commutativity of $\cdot$ (the product): $\forall \  \alpha,\beta \in \mathbb{K}$, $\forall \ x\in X$ we have <br>
-$$\alpha \stackrel{(1)}{\cdot  } (\beta \stackrel{(2)}{\cdot  }  x)=(\alpha \stackrel{(3)}{\cdot  } \beta)\stackrel{(4)}{\cdot  }x$$
-where (1) is a product in $X$, (2) is a product in $X$, (3) is a product in $\mathbb{K}$ and (4) is a product in $X$ (Q: what does it mean?) The element $\beta\cdot x$ is multiplied by $\alpha$, and this is the same element as&hellip; (and the property is that this is the same result, note that they are not the same object, [$\color{lime}\textbf{Q}$. in which sense?]).<br>
-(6) Distributivity of $\cdot$ (in  $\mathbb{K}$): $\forall \  \alpha,\beta \in\mathbb{K}, \ \ \forall \ x\in X$ we have<br>
-$$(\alpha\stackrel{(1)}{+} \beta)\cdot  x=\alpha x\stackrel{(2)}{+} \beta x$$
+$$\alpha \stackrel{(1)}{\cdot  } (\beta \stackrel{(2)}{\cdot  }  x)=(\alpha \stackrel{(3)}{\cdot  } \beta)\stackrel{(4)}{\cdot  }x$$$$(\alpha\stackrel{(1)}{+} \beta)\cdot  x=\alpha x\stackrel{(2)}{+} \beta x$$<p>
 where (1) is a sum in $\mathbb{K}$ (so $\alpha+\beta$ is an element in $\mathbb{K}$) and (2) is a sum in $X$. (we compare this to the sum between $\alpha x$ and $\beta x$), and what happens is that those elements are the  same. Note: I can do the opposite (see below).<br>
 (7) Distributivity of scalar: $\forall \  \alpha\in \mathbb{K}, \forall \ x,y\in X$ we have $\alpha\cdot (x+y)=\alpha\cdot x+\alpha\cdot y$. I sum $x$ and $y$, this is an element in $X$&hellip;<br>
 (8) Neutrality of $\cdot$ (neutral element in $\mathbb{K}$): $1x=x\ \ \forall \ x\in X$.<br>
@@ -275,25 +280,11 @@ A seminorm is called a norm if it also satisfies (4) $\mathcal{N}(x)=0\Leftright
 <p>If $\mathcal{N}$ is a norm, we usually write (prefer the notation $\lVert \cdot  \rVert$ for $\mathcal{N}$) $\lVert x \rVert=\mathcal{N}(x)$, and the pair $(X, \mathcal{N})=(X,\lVert \cdot  \rVert)$ is called a normed space. In other words, a normed space is a set endowed with a norm, which is a particular function that we defined above and generalizes the notion of distance to more abstract spaces.</p>
 <p>Q: I heard (&ldquo;Beginning functional analysis&rdquo; p5) that norms always give rise to metrics, what does it mean? Why have norms and metrics if they both generalize distance? (See intructive example p.6) A metric is something more general than a norm right?</p>
 <p>Note: once you have a norm you have a notion of topology (sequences, convergence, continuity etc.).</p>
-<p>What are some examples of norms?<br>
-<strong>Example.</strong> $X=\mathbb{R}$, $\left|x\right|=\mathcal{N}(x)\ \ \forall \ x\in\mathbb{R}$ then $\mathcal{N}$ is a norm on $\mathbb{R}$, and $(\mathbb{R},\left|\cdot \right|)$ is a normed space. Q: why is this obvious? By def. or construction (properties) of abs val? Yes, the important thing is that any number has a finite absolute value (bec. $+\infty$ and $-\infty$ do not belong to $\mathbb{R}$). $\left|\cdot \right|$ is non-negative, homogeneous $\left|\alpha \cdot x\right|=\left|a\right|\cdot \left|x\right|$ and $\left|a+b\right|\leq \left|a\right|+\left|b\right|$ (this is the triangle inequality which is known to be true for the absolute value), $\forall \ a,b\in\mathbb{R}$. Recall the def. of the abs. val.
-$$\left|a\right|=\begin{cases} a &amp; a\geq  0 \ -a &amp; a&lt;0 \end{cases}$$
+$$\left|a\right|=\begin{cases} a & a\geq  0 \\ -a & a<0 \end{cases}$$<p>
 and try to recall the proof using the definition (the shortest path between two points is the straight line).</p>
-<p><strong>Example.</strong> On $X=\mathbb{R}^{N}$, $N\geq 2$, i.e.
-$$X=\mathbb{R}^{N}={\underline{x}=(x_{1},\ldots,x_{N}):x_{i}\in \mathbb{R},i=1,\ldots,n}=\underbrace{\mathbb{R}\times  \ldots\times  \mathbb{R}}_{N\text{ times}}$$</p>
-<p>Set $\lVert \underline{x} \rVert=\sqrt{\sum_{i=1}^{N}x_{i}^{2}}$ with $\underline{x}=(x_{1},\ldots,x_{N})\in \mathbb{R}^{N}$, this is a norm on $X=\mathbb{R}^{N}$ (called Euclidean norm). Indeed: (i) $\lVert \underline{x} \rVert\geq 0\ \ \forall \ \underline{x}\in \mathbb{R}^{N}$ as $\sqrt{\cdot }$, (ii)
-$$\lVert \alpha\cdot \underline{x} \rVert=\sqrt{\sum_{i=1}^{N}(\alpha x)^{2}}=\sqrt{\sum_{i=1}^{N}\alpha_{i}^{2}x_{i}^{2}}=\sqrt{\alpha^{2}}\lVert \underline{x} \rVert=\left|\alpha\right|\lVert \underline{x} \rVert \qquad \ \ \forall \  \underline{x}\in  \mathbb{R}^{N}$$
-(iv) $\lVert \underline{x} \rVert=0\iff \sqrt{\sum_{i=1}^{N}x_{i}^{2}}=0$, $\underline{x}=(x_{1},\ldots,x_{N})$ $\iff \sum_{i=1}^{N}\underbrace{x_{i}^{2}}<em>{\geq 0}=0$
-$$\iff  x</em>{i}^{2}=0\ \ \forall \  i=1,\ldots,N\iff  x_{i}=0\ \ \forall \  i=1,\ldots,N\iff  \underline{x}=0_{\mathbb{R}^{N}}$$
-(iii) (triangle inequality) Let $\underline{x}=(x_{1},\ldots,x_{N})\in \mathbb{R}^{N}$, $\underline{y}=(y_{1},\ldots,y_{N})\in \mathbb{R}^{N}$ then:
-$$\begin{aligned} &amp; \lVert \underline{x}+\underline{y} \rVert^{2}=\sum_{i=1}^{N} (x_{i}+y_{i})^{2}=\sum_{i=1}^{N} (x_{i}^{2}+y_{i}^{2}+2x_{i}y_{i})=\sum_{i=1}^{N} x_{i}^{2}+\sum_{i=1}^{N} y_{i}^{2}+2\sum_{i=1}^{N} x_{i}y_{i}  \  &amp;  = \lVert \underline{x} \rVert^{2}+\lVert \underline{y} \rVert^{2}+2\sum_{i=1}^{N}x_{i}y_{i} \end{aligned}$$
-Q: shouldn&rsquo;t we have the square root somewhere here since we consider euclidean norm? I think yes (like in homogeneity) but just omitted for simplicity, i.e.
-$$\small \lVert x+y \rVert^{2}=\sqrt{\sum_{i=1}^{n}(x_{i}+y_{i})^{2}}=\sqrt{\sum_{i=1}^{n} (x_{i}^{2}+2x_{i}y_{i}+y_{i}^{2})}=\sqrt{\sum_{i=1}^{n} x_{i}^{2}}+\sqrt{\sum_{i=1}^{n} y_{i}^{2}}+\sqrt{2\sum_{i=1}^{n} x_{i}y_{i}}$$
+$$X=\mathbb{R}^{N}=\{\underline{x}=(x_{1},\ldots,x_{N}):x_{i}\in \mathbb{R},i=1,\ldots,n\}=\underbrace{\mathbb{R}\times  \ldots\times  \mathbb{R}}_{N\text{ times}}$$$$\lVert \alpha\cdot \underline{x} \rVert=\sqrt{\sum_{i=1}^{N}(\alpha x)^{2}}=\sqrt{\sum_{i=1}^{N}\alpha_{i}^{2}x_{i}^{2}}=\sqrt{\alpha^{2}}\lVert \underline{x} \rVert=\left|\alpha\right|\lVert \underline{x} \rVert \qquad \ \ \forall \  \underline{x}\in  \mathbb{R}^{N}$$$$\begin{aligned} & \lVert \underline{x}+\underline{y} \rVert^{2}=\sum_{i=1}^{N} (x_{i}+y_{i})^{2}=\sum_{i=1}^{N} (x_{i}^{2}+y_{i}^{2}+2x_{i}y_{i})=\sum_{i=1}^{N} x_{i}^{2}+\sum_{i=1}^{N} y_{i}^{2}+2\sum_{i=1}^{N} x_{i}y_{i}  \\  &  = \lVert \underline{x} \rVert^{2}+\lVert \underline{y} \rVert^{2}+2\sum_{i=1}^{N}x_{i}y_{i} \end{aligned}$$$$\small \lVert x+y \rVert^{2}=\sqrt{\sum_{i=1}^{n}(x_{i}+y_{i})^{2}}=\sqrt{\sum_{i=1}^{n} (x_{i}^{2}+2x_{i}y_{i}+y_{i}^{2})}=\sqrt{\sum_{i=1}^{n} x_{i}^{2}}+\sqrt{\sum_{i=1}^{n} y_{i}^{2}}+\sqrt{2\sum_{i=1}^{n} x_{i}y_{i}}$$<p>
 Wait, this above is wrong, that is the computation of $\lVert x+y \rVert$, not $\lVert x+y \rVert^{2}$. Precisely because we compute the square of the norm, we get rid of the square root. Nevermind.</p>
-<p>Now the question is, is this, i.e. $\lVert \underline{x}+\underline{y} \rVert^{2}$, $\leq (\lVert \underline{x} \rVert+\lVert \underline{y} \rVert)^{2}$? First of all
-$$(\lVert \underline{x} \rVert+\lVert \underline{y} \rVert)^{2}=\lVert \underline{x} \rVert^{2}+\lVert \underline{y} \rVert^{2}+2\lVert \underline{x} \rVert\lVert \underline{y} \rVert$$
-so if we are able to prove that $\sum_{i=1}^{N}x_{i}y_{i}\leq 2\lVert \underline{x} \rVert\lVert \underline{y} \rVert\ \ \forall \ \underline{x},\underline{y}\in X$ then the triangle inequality would hold. For simplicity, let us denote by $\langle \underline{x} , \underline{y} \rangle=\sum_{i=1}^{N}x_{i}y_{i}$ where $\underline{x}=(x_{1},\ldots,x_{N})$, $\underline{y}=(y_{1},\ldots,y_{N})$. Let us prove that $\left|\langle \underline{x} , \underline{y} \rangle\right|\leq \lVert \underline{x} \rVert \lVert \underline{y} \rVert\ \ \forall \ \underline{x},\underline{y}\in \mathbb{R}^{N}$ (i.e. the Cauchy-Schwarz inequality in $\mathbb{R}^{N}$). Set $g(t)=\lVert \underline{x}+t\underline{y} \rVert^{2}$, $t\in\mathbb{R}$, ($\underline{x}, \underline{y}$ are fixed). Then
-$$\begin{aligned} &amp; 0\leq g(t)=\lVert \underline{x}+t\underline{y} \rVert^{2}=\sum_{i=1}^{N}(x_{i}+ty_{i})^{2}=\sum_{i=1}^{N}x_{i}^{2}+t^{2}\sum_{i=1}^{N}y_{i}^{2}+2t^{2}\sum_{i=1}^{N}x_{i}y_{i}\ &amp; =\lVert \underline{x} \rVert^{2}+t^{2}\lVert \underline{y} \rVert^{2}+2t\langle \underline{x} , \underline{y} \rangle  \end{aligned}$$
+$$(\lVert \underline{x} \rVert+\lVert \underline{y} \rVert)^{2}=\lVert \underline{x} \rVert^{2}+\lVert \underline{y} \rVert^{2}+2\lVert \underline{x} \rVert\lVert \underline{y} \rVert$$$$\begin{aligned} & 0\leq g(t)=\lVert \underline{x}+t\underline{y} \rVert^{2}=\sum_{i=1}^{N}(x_{i}+ty_{i})^{2}=\sum_{i=1}^{N}x_{i}^{2}+t^{2}\sum_{i=1}^{N}y_{i}^{2}+2t^{2}\sum_{i=1}^{N}x_{i}y_{i}\\ & =\lVert \underline{x} \rVert^{2}+t^{2}\lVert \underline{y} \rVert^{2}+2t\langle \underline{x} , \underline{y} \rangle  \end{aligned}$$<p>
 Now, let $a=\lVert \underline{y} \rVert^{2}$, $b=2\langle \underline{x} , \underline{y} \rangle$, $c=\lVert \underline{x} \rVert^{2}$, $0\leq g(t)=at^{2}+b+c\ \ \forall \ t\in\mathbb{R}$, i.e. we have an upward quadratic function (parabola), $\Delta\leq 0$, $\Delta=b ^{2}-4ac\leq 0$ so $4\langle \underline{x} , \underline{y} \rangle^{2}-4\lVert \underline{x} \rVert^{2}\lVert \underline{y} \rVert^{2}\leq 0$ which means $\left|\langle \underline{x} , \underline{y} \rangle\right|\leq \lVert \underline{x} \rVert\lVert \underline{y} \rVert$ (CS). $\square$
 Note: another norm on $X=\mathbb{R}^{N}$ would be (2) $\lVert \underline{x} \rVert_{1}=\sum_{i=1}^{N}\left|x_{i}\right|$, $\underline{x}=(x_{1},\ldots,x_{N})$ if we do this, this is also a norm on $\mathbb{R}^{N}$, i.e. $(\mathbb{R}^{N},\lVert \cdot \rVert_{1})$ is a normed space.
 (3) Setting $\lVert \underline{x} \rVert_{\infty}=\max_{1\leq i\leq N}\left|x_{i}\right|$ (i.e. the largest component), where (again) $\underline{x}=(x_{1},\ldots,x_{N})$, then $(\mathbb{R},\lVert \cdot  \rVert_{\infty})$ is a normed space. Let us check it.</p>
@@ -302,20 +293,12 @@ Note: another norm on $X=\mathbb{R}^{N}$ would be (2) $\lVert \underline{x} \rVe
 <p>Q: what is the logic behind the very first step in both homogeneity and triangle inequality in the previous example? We consider $x+y$ as a new element, and $\alpha x$ as a new element? Yes, you can call it z if you want for simplicity.</p>
 <p><strong>Example.</strong> $X=\mathbb{R}^{N}$, define $\lVert \underline{x} \rVert_{1}=\sum_{i=1}^{N}\left|x_{i}\right|$, and $\lVert \underline{x} \rVert_{\infty}=\max_{1\leq i\leq N}\left|x_{i}\right|$ with $\underline{x}=(x_{1},\ldots,x_{N})$, these two are norms on $\mathbb{R}^{N}$.</p>
 <p>Q: can you make a visual/stupid computation example of the difference between this norms in $\mathbb{R}^{n}$?</p>
-<p><strong>Example.</strong> (Space of sequences, which are absolutely summable) $\underline{x}=(x_{n})_{n}$, $\underline{y}=(y_{n})<em>{n}$ real sequences. The sum is $\underline{x}+\underline{y}=(x</em>{n}+y_{n})<em>{n}$ real sequence, and the scalar multiplication is $\lambda \cdot \underline{x}=(\lambda x</em>{n})<em>{n}$ real sequence $\forall \  \lambda\in\mathbb{R}$. Now, consider
-[$\color{lime}\textbf{Q}$. So with this definition below for example the sequence $(\frac{1}{n})$ is not in $X=\ell^{1}$, correct?]
-$$X:=\ell^{1}(\mathbb{N})=\left{ \underline{x}=(x</em>{n})<em>{n}\subset \mathbb{R}\ : \ \sum</em>{n=1}^{\infty}\left|x_{n}\right|&lt;\infty \right}$$
-$(X,+,\cdot )$ is a vector space on $\mathbb{R}$ since given $\underline{x}=(x_{n})<em>{n}\in X$, $\underline{y}=(y</em>{n})<em>{n}\in X$ we have $\underline{x}+\lambda\underline{y}=(x</em>{n}+\lambda y_{n})<em>{n}$ for $\lambda\in\mathbb{R}$ which is in $X$ since
-$$\sum</em>{i=1}^{\infty} \left|x_{n}+\lambda y_{n}\right|\leq  \sum_{i=1}^{\infty} (\left|x_{n}\right|+\left|\lambda\right|\left|y_{n}\right|)=\underbrace{\sum_{n=1}^{\infty} \left|x_{n}\right| }<em>{ &lt;\infty }+\left|\lambda\right|\underbrace{ \sum</em>{n=1}^{\infty} \left|y_{n}\right| }_{ &lt;\infty }$$
+$$\sum_{i=1}^{\infty} \left|x_{n}+\lambda y_{n}\right|\leq  \sum_{i=1}^{\infty} (\left|x_{n}\right|+\left|\lambda\right|\left|y_{n}\right|)=\underbrace{\sum_{n=1}^{\infty} \left|x_{n}\right| }_{ <\infty }+\left|\lambda\right|\underbrace{ \sum_{n=1}^{\infty} \left|y_{n}\right| }_{ <\infty }$$<p>
 then $\underline{x}+\lambda\underline{y}\in \ell^{1}(\mathbb{N})$.</p>
 <p><strong>Exercise.</strong> Prove that $(\ell^{1},\lVert \cdot  \rVert_{1})$ is a normed space (where $\lVert \underline{x} \rVert_{1}=\sum_{n=1}^{\infty}\left|x_{n}\right|$).</p>
-<p><strong>Example.</strong> $X=\mathscr{C}(I)={f:I\to\mathbb{R}\text{ continuous}}$, $I=[a,b]$. Define $\lVert f \rVert_{\infty}=\sup_{t\in I}\left|f(t)\right|$ (the supremum norm, also called uniform norm) for $f\in X$ and
-$$\lVert f \rVert_{1}=\int_{a}^{b} \left|f(t)\right|dt=\int_{[a,b]} \left|f\right|dt$$
+$$\lVert f \rVert_{1}=\int_{a}^{b} \left|f(t)\right|dt=\int_{[a,b]} \left|f\right|dt$$<p>
 $(X,\lVert \cdot  \rVert_{\infty})$ and $(X,\lVert \cdot  \rVert_{1})$ are normed spaces. <strong>Exercise.</strong> check it!</p>
-<p>Hints: $\lVert f \rVert_{\infty}&lt;\infty$ (Weierstrass theorem, $I=[a,b]$), $\lVert f \rVert_{1}&lt;\infty$ (classical result in integral calculus, the Riemann integral of a continuous function on some finite interval is well-defined and finite) $\forall \ f\in X$, $\lVert \cdot  \rVert_{\infty}$ and $\lVert \cdot  \rVert_{1}$ are seminorms (easy exercise), indeed (proof of uniqueness, so proof that they are norms)
-$$\lVert f \rVert_{\infty}=0\iff \sup_{t\in  I}\left|f(t)\right|=0\iff  \left|f(t)\right|=0\ \ \forall \  t \iff  f(t)=0\ \ \forall \  t\in  I \iff  f=0_{X}$$
-(i.e. the supremum norm of $f$ is zero if and only if $f$ is the function which is constantly equal to 0 for each point in the interval). For $\lVert f \rVert_{1}$ we have
-$$\lVert f \rVert_{1}=0\Leftrightarrow  \int_{a}^{b} \left|f(t)\right|dt=0\Leftrightarrow  \left|f(t)\right|=0\ \ \forall \  t\in  [a,b]$$
+$$\lVert f \rVert_{\infty}=0\iff \sup_{t\in  I}\left|f(t)\right|=0\iff  \left|f(t)\right|=0\ \ \forall \  t \iff  f(t)=0\ \ \forall \  t\in  I \iff  f=0_{X}$$$$\lVert f \rVert_{1}=0\Leftrightarrow  \int_{a}^{b} \left|f(t)\right|dt=0\Leftrightarrow  \left|f(t)\right|=0\ \ \forall \  t\in  [a,b]$$<p>
 (which is a property of continuous functions) $\Leftrightarrow  f=0_{X}$.</p>
 
             </div>
@@ -384,7 +367,7 @@ $$\lVert f \rVert_{1}=0\Leftrightarrow  \int_{a}^{b} \left|f(t)\right|dt=0\Leftr
 
 
     
-    <script async src="http://localhost:38243/js/main.js" ></script>
+    <script async src="http://localhost:1313/js/main.js" ></script>
 
     
 

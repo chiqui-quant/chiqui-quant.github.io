@@ -2,7 +2,7 @@
 date = '2025-02-11T12:29:26+01:00'
 draft = true
 title = 'My First Post'
-katex = true
+math = true
 +++
 
 **Big Disclaimer:** I would like to improve the notes in some future with better explanations, but for now this is the best I can provide, I hope it will still be useful for you.
@@ -97,14 +97,13 @@ What are some examples of norms?
 $$\left|a\right|=\begin{cases} a & a\geq  0 \\ -a & a<0 \end{cases}$$
 and try to recall the proof using the definition (the shortest path between two points is the straight line).
 
-**Example.** On $X=\mathbb{R}^{N}$, $N\geq 2$, i.e.
+**Example.** On $X=\mathbb{R}^{N}$, $N\geq 2$, i.e. 
 $$X=\mathbb{R}^{N}=\{\underline{x}=(x_{1},\ldots,x_{N}):x_{i}\in \mathbb{R},i=1,\ldots,n\}=\underbrace{\mathbb{R}\times  \ldots\times  \mathbb{R}}_{N\text{ times}}$$
-
 Set $\lVert \underline{x} \rVert=\sqrt{\sum_{i=1}^{N}x_{i}^{2}}$ with $\underline{x}=(x_{1},\ldots,x_{N})\in \mathbb{R}^{N}$, this is a norm on $X=\mathbb{R}^{N}$ (called Euclidean norm). Indeed: (i) $\lVert \underline{x} \rVert\geq 0\ \ \forall \ \underline{x}\in \mathbb{R}^{N}$ as $\sqrt{\cdot }$, (ii) 
 $$\lVert \alpha\cdot \underline{x} \rVert=\sqrt{\sum_{i=1}^{N}(\alpha x)^{2}}=\sqrt{\sum_{i=1}^{N}\alpha_{i}^{2}x_{i}^{2}}=\sqrt{\alpha^{2}}\lVert \underline{x} \rVert=\left|\alpha\right|\lVert \underline{x} \rVert \qquad \ \ \forall \  \underline{x}\in  \mathbb{R}^{N}$$
 (iv) $\lVert \underline{x} \rVert=0\iff \sqrt{\sum_{i=1}^{N}x_{i}^{2}}=0$, $\underline{x}=(x_{1},\ldots,x_{N})$ $\iff \sum_{i=1}^{N}\underbrace{x_{i}^{2}}_{\geq 0}=0$ 
 $$\iff  x_{i}^{2}=0\ \ \forall \  i=1,\ldots,N\iff  x_{i}=0\ \ \forall \  i=1,\ldots,N\iff  \underline{x}=0_{\mathbb{R}^{N}}$$
-(iii) (triangle inequality) Let $\underline{x}=(x_{1},\ldots,x_{N})\in \mathbb{R}^{N}$, $\underline{y}=(y_{1},\ldots,y_{N})\in \mathbb{R}^{N}$ then:
+(iii) (triangle inequality) Let $\underline{x}=(x_{1},\ldots,x_{N})\in \mathbb{R}^{N}$ and $\underline{y}=(y_{1},\ldots,y_{N})\in \mathbb{R}^{N}$ then:
 $$\begin{aligned} & \lVert \underline{x}+\underline{y} \rVert^{2}=\sum_{i=1}^{N} (x_{i}+y_{i})^{2}=\sum_{i=1}^{N} (x_{i}^{2}+y_{i}^{2}+2x_{i}y_{i})=\sum_{i=1}^{N} x_{i}^{2}+\sum_{i=1}^{N} y_{i}^{2}+2\sum_{i=1}^{N} x_{i}y_{i}  \\  &  = \lVert \underline{x} \rVert^{2}+\lVert \underline{y} \rVert^{2}+2\sum_{i=1}^{N}x_{i}y_{i} \end{aligned}$$
 Q: shouldn't we have the square root somewhere here since we consider euclidean norm? I think yes (like in homogeneity) but just omitted for simplicity, i.e. 
 $$\small \lVert x+y \rVert^{2}=\sqrt{\sum_{i=1}^{n}(x_{i}+y_{i})^{2}}=\sqrt{\sum_{i=1}^{n} (x_{i}^{2}+2x_{i}y_{i}+y_{i}^{2})}=\sqrt{\sum_{i=1}^{n} x_{i}^{2}}+\sqrt{\sum_{i=1}^{n} y_{i}^{2}}+\sqrt{2\sum_{i=1}^{n} x_{i}y_{i}}$$
@@ -128,7 +127,7 @@ Q: what is the logic behind the very first step in both homogeneity and triangle
 
 Q: can you make a visual/stupid computation example of the difference between this norms in $\mathbb{R}^{n}$?
 
-**Example.** (Space of sequences, which are absolutely summable) $\underline{x}=(x\_{n})\_{n}$, $\underline{y}=(y_{n})_{n}$ real sequences. The sum is $\underline{x}+\underline{y}=(x_{n}+y_{n})_{n}$ real sequence, and the scalar multiplication is $\lambda \cdot \underline{x}=(\lambda x_{n})_{n}$ real sequence $\forall \  \lambda\in\mathbb{R}$. Now, consider 
+**Example.** (Space of sequences, which are absolutely summable) $\underline{x}=(x_{n})_{n}$, $\underline{y}=(y_{n})_{n}$ real sequences. The sum is $\underline{x}+\underline{y}=(x_{n}+y_{n})_{n}$ real sequence, and the scalar multiplication is $\lambda \cdot \underline{x}=(\lambda x_{n})_{n}$ real sequence $\forall \  \lambda\in\mathbb{R}$. Now, consider 
 [$\color{lime}\textbf{Q}$. So with this definition below for example the sequence $(\frac{1}{n})$ is not in $X=\ell^{1}$, correct?]
 $$X:=\ell^{1}(\mathbb{N})=\left\{ \underline{x}=(x_{n})_{n}\subset \mathbb{R}\ : \ \sum_{n=1}^{\infty}\left|x_{n}\right|<\infty \right\}$$
 $(X,+,\cdot )$ is a vector space on $\mathbb{R}$ since given $\underline{x}=(x_{n})_{n}\in X$, $\underline{y}=(y_{n})_{n}\in X$ we have $\underline{x}+\lambda\underline{y}=(x_{n}+\lambda y_{n})_{n}$ for $\lambda\in\mathbb{R}$ which is in $X$ since 

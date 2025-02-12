@@ -22,12 +22,7 @@
 &lt;li&gt;What are some properties about unions and intersections of open and closed sets? (What are 2 examples that we have seen in $\mathbb{R}$ with $\left|\cdot \right|$)?&lt;/li&gt;
 &lt;li&gt;What is a sequence? What is a subsequence? When do we say that a sequence converges in a normed space? What is the first theorem that we have seen about the convergence of sequences in a normed space?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Example.&lt;/strong&gt; $I=[a,b]\subset \mathbb{R}$, $\mathscr{C}^{1}(I)={f:I\to\mathbb{R}\text{ continuously differentiable}}$ (recall that a continuously differentiable function $f(x)$ is a function whose derivative function $f&amp;rsquo;(x)$ is also continuous at the point in question). Set
-$$\lVert f \rVert_{1,1}=\int_{a}^{b}\left|f(t)\right|dt+\int_{a}^{b} \left|f&amp;rsquo;(t)\right|dt\qquad \qquad \lVert f \rVert_{1, \infty}=\sup_{t\in  I}(\left|f(t)\right|+\left|f&amp;rsquo;(t)\right|)$$
-then $\lVert \cdot  \rVert_{1,1}$ and $\lVert \cdot  \rVert_{1, \infty}$ are norms on $\mathscr{C}^{1}(I)$. Note: without the parts with the derivatives they are only seminorms on $\mathscr{C}^{1}(I)$ (Q: why? how? What is that fails?). Note also that
-$$\lVert f \rVert_{1}=\int_{a}^{b} \left|f&amp;rsquo;(t)\right|dt\ \ \text{ and}\ \ \lVert f \rVert_{\infty}=\sup_{t\in  I}\left|f&amp;rsquo;(t)\right|$$
-are seminorms on $\mathscr{C}^{1}$. &lt;strong&gt;Exercise.&lt;/strong&gt; Check it! Help:
-$$\lVert f \rVert_{1}=0\iff\int_{a}^{b} \left|f&amp;rsquo;(t)\right|dt=0\iff  \left|f&amp;rsquo;(t)\right|=0\ \ \forall \  t\in  I\iff  f&amp;rsquo;(t)=0\ \ \forall \  t\in  I$$
+$$\lVert f \rVert_{1,1}=\int_{a}^{b}\left|f(t)\right|dt+\int_{a}^{b} \left|f&#39;(t)\right|dt\qquad \qquad \lVert f \rVert_{1, \infty}=\sup_{t\in  I}(\left|f(t)\right|+\left|f&#39;(t)\right|)$$$$\lVert f \rVert_{1}=\int_{a}^{b} \left|f&#39;(t)\right|dt\ \ \text{ and}\ \ \lVert f \rVert_{\infty}=\sup_{t\in  I}\left|f&#39;(t)\right|$$$$\lVert f \rVert_{1}=0\iff\int_{a}^{b} \left|f&#39;(t)\right|dt=0\iff  \left|f&#39;(t)\right|=0\ \ \forall \  t\in  I\iff  f&#39;(t)=0\ \ \forall \  t\in  I$$&lt;p&gt;
 which happens if and only if $f(t)$ is constant (not necessarily zero!).&lt;/p&gt;</description>
       
     </item>
