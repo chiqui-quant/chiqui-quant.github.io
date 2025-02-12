@@ -1,93 +1,88 @@
 +++
 date = '2025-02-11T12:29:26+01:00'
 draft = true
-katex = true
+title = 'My Second Post'
+math = true
 +++
 
 **Questions** 
-- What are some additional examples of normed spaces? $(\mathscr{C}(I),\lVert \cdot \rVert_{1,1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1,\infty})$, $(\mathscr{C}_{0}^{1}(I),\lVert \cdot \rVert_{1})$.
-- What is an open/closed ball and an open/closed set?
-- Why an open ball is an open set?
-- What are some properties about unions and intersections of open and closed sets? (What are 2 examples that we have seen in $\mathbb{R}$ with $\left|\cdot \right|$)?
-- What is a sequence? What is a subsequence? When do we say that a sequence converges in a normed space? What is the first theorem that we have seen about the convergence of sequences in a normed space?
+- What is the characterization of closed sets in terms of sequences? 
+- What is the closure of a subset of a normed space? What are some important observations about it?
+- Why the closure of an open ball is the closed ball?
+- When do we say that a subset in a normed space is dense? What are two examples of dense sets that we have seen in $(\mathbb{R},| \cdot |)$?
+- What does the lemma about density that we have seen say? How can we use it to check if a set is dense?
+- What is an interior point? What are some important observations about it?
+- What is a lemma that relats the closure and interior? What is an example?
+- What is a limit point? What is an example of limit point?
+- What does the proposition about limit points say?
+- When do we say that norms are equivalent?
+- What is an example of norms that are not equivalent? On $\mathscr{C}(I)$, $\lVert \cdot \rVert_{1}$ and $\lVert \cdot \rVert_{\infty}$.
 
-**Example.** $I=[a,b]\subset \mathbb{R}$, $\mathscr{C}^{1}(I)=\{f:I\to\mathbb{R}\text{ continuously differentiable}\}$ (recall that a continuously differentiable function $f(x)$ is a function whose derivative function $f'(x)$ is also continuous at the point in question). Set 
-$$\lVert f \rVert_{1,1}=\int_{a}^{b}\left|f(t)\right|dt+\int_{a}^{b} \left|f'(t)\right|dt\qquad \qquad \lVert f \rVert_{1, \infty}=\sup_{t\in  I}(\left|f(t)\right|+\left|f'(t)\right|)$$
-then $\lVert \cdot  \rVert_{1,1}$ and $\lVert \cdot  \rVert_{1, \infty}$ are norms on $\mathscr{C}^{1}(I)$. Note: without the parts with the derivatives they are only seminorms on $\mathscr{C}^{1}(I)$ (Q: why? how? What is that fails?). Note also that 
-$$\lVert f \rVert_{1}=\int_{a}^{b} \left|f'(t)\right|dt\ \ \text{ and}\ \ \lVert f \rVert_{\infty}=\sup_{t\in  I}\left|f'(t)\right|$$
-are seminorms on $\mathscr{C}^{1}$. **Exercise.** Check it! Help: 
-$$\lVert f \rVert_{1}=0\iff\int_{a}^{b} \left|f'(t)\right|dt=0\iff  \left|f'(t)\right|=0\ \ \forall \  t\in  I\iff  f'(t)=0\ \ \forall \  t\in  I$$
-which happens if and only if $f(t)$ is constant (not necessarily zero!).
+How can we characterize closed sets in terms of sequences? Q: What does the previous question actually mean?
 
-**Example.** $\mathscr{C}^{1}_{0}(I)=\{f:I\to\mathbb{R}\text{ continuously differentiable with }f(x)=0\}$, $I=[a,b]$ is a vector space and 
-$$\lVert f\rVert_{1}=\int_{a}^{b} \left|f'(t)\right|dt$$
-with $f\in \mathscr{C}^{1}_{0}(I)$ defines a norm on $\mathscr{C}^{1}_{0}$. **Exercise.** Check it!
+**P.** A subset $C$ of $X$ is a closed subset of $(X,\lVert \cdot \rVert)$ if the limit of any convergent sequence of $C$ remains in $C$, i.e. if $\forall \  \{x_{n}\}_{n}\subset C$, $\{x_{n}\}_{n}$ converges to $x$, then $x\in C$. (Q: isn't this an if and only if?)
 
-What is the topology of normed spaces? What do we mean by topology of a normed space? Why it is so important?
+**Proof.** "$\Rightarrow$" Assume that $C$ is closed and consider a sequence $\\{x\_{n}\\}\_{n}\subset C$ which converges to some $x\in X$. We need to prove $x\in C$. We argue by contradiction and assume $x\notin C$, i.e. $x\in X\setminus C$, but by assumption $C$ is closed so $X\setminus C$ is open, then by definition $x\in X\setminus C\Rightarrow  \exists \ r>0$ s.t. $B(x, r)\subset X\setminus C$. But since $\lim_{n}x_{n}=x$, $\forall \  \varepsilon>0: \exists \ N_{\varepsilon}\in \mathbb{N}$ s.t. $\lVert x_{n}-x \rVert<\varepsilon\ \ \forall \ n\geq N_{\varepsilon}$. In particular, for $\varepsilon=r: \exists \ N_{r}\in \mathbb{N}$ s.t. $\lVert x_{n}-x \rVert<r\ \ \forall \ n\geq N_{r}$, i.e. $x_{n}\in B(x, r)\ \ \forall \ n\geq N_{r}$, $x_{n}\in X\setminus C\ \ \forall \ n\geq N_{r}$ but $\{x_{n}\}_{n}\subset C$ (contradiction) $C \cap (X\setminus C)=\emptyset \Rightarrow  x\in C$. 
 
-Crucial concepts are the ones of open/closed ball and open/closed sets.
-**Definition.** Let $(X,\lVert \cdot \rVert)$ be a normed space. For any $x_{0}\in X$ and $r>0$, 
-$$B(x_{0},r)=\{x\in  X \ : \  \lVert x-x_{0} \rVert<r\}$$
-is the open ball centered at $x_{0}\in X$ with radius $r>0$, and 
-$$B_{C}(x_{0},r)=\{x\in  X \ : \  \lVert x-x_{0} \rVert\leq  r\}$$
-is the closed ball centered at $x_{0}\in X$ with radius $r>0$.
+"$\Leftarrow$" (If any seq. conv. to $x\in C$, then $C$ is closed) Assume that **any** convergent sequence has its limit in $C$ and let us prove that $C$ is closed. We argue by contradiction and assume $C$ not to be closed. $C \neq \emptyset$, $X\setminus C$ is **not open**, $X\setminus C \neq \emptyset$, which means "$\forall \  x\in X\setminus C,\exists \ r>0$ s.t. $B(x, r)\subset X\setminus C$" is not true, i.e. $\exists \  x\in X\setminus C:r>0$, $B(x, r)\not \subset X\setminus C$, i.e. $\forall \  r>0:B(x, r)\cap C \neq \emptyset$. For $r=\frac{1}{n}$, $n\geq 1$, $n\in \mathbb{N}$, $B\left( x, \frac{1}{n} \right)\cap C \neq \emptyset$ **for all** $n\in \mathbb{N}$, i.e. $\forall \  n\in \mathbb{N}\ \ \exists \ x_{n}\in C \cap B\left( x, \frac{1}{n} \right)$ we have like this a sequence $\{x_{n}\}_{n}\subset C$ and $\lVert x_{n}-x \rVert<\frac{1}{n}\ \ \forall \ n\in \mathbb{N}$. So $\lim_{n}\lVert x_{n}-x \rVert=0$, i.e. $x=\lim_{n}x_{n}$, $x\in X\setminus C$ which contradicts our assumption, therefore $C$ is closed. $\square$
 
-**Definition.** A subset $\mathcal{U}$ of $X$ is called an open set (for $(X,\lVert \cdot \rVert)$ a given normed space) if $\forall \ x\in \mathcal{U}\ \ \exists \ r>0$ such that $B(x_{0}, r)\subset \mathcal{U}$ (i.e. there is a radius $r$ such that there exists an open ball contained in the set). A subset $\mathcal{U}$ of $X$ is called a closed set if $\mathcal{U}^{C}=X\setminus \mathcal{U}$ is an open set.
+**Def.** Let $(X,\lVert \cdot \rVert)$ be a normed space and let $Y \subset X$. The **closure** $\overline{Y}$ of $Y$ is defined as $\overline{Y}=\{x\in X \ : \ \exists \ \{x_{n}\}_{n}\subset Y\text{ s.t. }x=\lim_{n}x_{n}\}$ (i.e. the set of all possible elements in $X$ which are limits of sequences in $Y$).
 
-Note: by convention $\emptyset$ is an open set (why? Take a look at mathstackexchange). Now, consider $X$ open set, then $X^{C}=\emptyset$ is closed so $\emptyset$ is also a closed set (and also $X$ is a closed set). Also, there are sets $\mathcal{U}$ of $X$ which are neither open nor closed.
+Note: (1) $Y \subset \overline{Y}$ (pick $x\in Y$, $\lim_{n}x_{n}=x\ \ \forall \ n$, $\{x_{n}\}_{n}\subset Y$, $x=\lim_{n}x_{n}$), (2) $\overline{Y}$ is closed (Proof: pick a sequence $\{y_{n}\}_{n}\subset \overline{Y}$ which cv. to $y\in X$, we need to prove that $y\in \overline{Y}$. For any $n\in\mathbb{N}$, $y_{n}\in \overline{Y}$ means that there is a sequence $\{x_{k}^{n}\}_{k}\subset Y$, i.e. a sequence $x_{k}$ depending on $n$, s.t. $\lim_{k}x_{k}^{n}=y_{n}$, definition of $y_{n}\in \overline{Y}$, then $y=\lim_{n}\lim_{k}x_{k}^{n}$, sequence with two indeces, $y$ is a limit of a sequence in $Y$ (PR: which one?) $\implies y\in \overline{Y}$. So, by construction $\overline{Y}$ is a closed set containing $Y$). Actually, this is the smallest possible closed set containing $Y$, i.e. 
+$$\overline{Y}=\bigcap_{\substack{C\text{ closed} \\Y \subset C }}C$$
+(the interseciton of all possible closed sets containing $Y$), to show it you need to prove that if $C$ is closed and $Y \subset C$ then $\overline{Y}\subset C$ (trivial).
 
-**Proposition.** If $x_{0}\in X$, $r>0$ then $B(x_{0}, r)$ is an open set.
+**E.g.** $\overline{B(x_{0},r)}=B_{C}(x_{0}, r)$ (the closure of the open ball is the closed ball).
 
-**Proof.** Indeed: let $x\in B(x_{0}, r)$, $\lVert x-x_{0} \rVert=\rho$, $0\leq \rho\leq r$ (this $r$ is the same as the one in $B(x_{0}, r)$) we look for $\varepsilon>0$ such that $B(x, \varepsilon)\subset B(x_{0}, r)$. 
-![[FA02.excalidraw|250]]
-Pick $y\in B(x, \varepsilon)$, then $\lVert y-x \rVert<\varepsilon$, we wish to choose $\varepsilon>0$ in such a way that $\lVert y-x_{0} \rVert<r$ (wait, shouldn't be $y-x_{0}<r$ instead of $y-x$? Yes, I did a typo). We have 
-$$\lVert y-x_{0} \rVert=\lVert (y-x)+(x-x_{0}) \rVert\stackrel{\text{tr.ineq.}}{\leq} \underbrace{\lVert y-x \rVert}_{<\varepsilon}+\underbrace{\lVert x-x_{0} \rVert}_{=\rho}<\varepsilon+\rho.$$
-If we choose $\varepsilon$ such that $\varepsilon+\rho\leq r$ then $\lVert y-x_{0} \rVert<\varepsilon+\rho<r$, $\varepsilon=r-\rho$ works (Q: why? Don't we include boundary points in this way? What happens in the extreme case? We have no problems because we chose y at distance strictly less than epsilon, which is greater than 0 so we chose a point for which it is impossible to be exactly in the boundary, that's the key point right?) $\implies$ $\forall \  x\in B(x_{0}, r)$, $\exists \  \varepsilon=r-\lVert x-x_{0} \rVert>0$ such that $B(x, \varepsilon)\subset B(x_{0}, r)\implies B(x_{0}, r)$ is an open set. $\square$
+**Proof.** Indeed: $B_{C}(x_{0}, r)$ is a closed set and $B(x_{0}, r)\subset B_{C}(x_{0}, r)$ which means $\overline{B(x_{0}, r)}\subset B_{C}(x_{0}, r)$. Let us prove now that $B_{C}(x_{0}, r)\subset \overline{B(x_{0}, r)}$. Pick $x\in B_{C}(x_{0}, r)$, if $\lVert x-x_{0} \rVert<r$ then $\{x_{n}\}_{n}\subset \overline{B(x_{0}, r)}$, i.e. $x\in \overline{B(x_{0}, r)}$. Assume then $\lVert x-x_{0} \rVert=r$, if we construct a sequence $\{x_{n}\}_{n}\subset B(x_{0}, r)$ s.t. $x=\lim_{n}x_{n}$ then we would have $x\in \overline{B(x_{0}, r)}$. Let $u=\frac{1}{r}(x-x_{0})\in X$, $\lVert u \rVert=\frac{1}{r}\lVert x-x_{0} \rVert=1$ (what is the meaning of this?). 
+![[FA03.excalidraw|250]]
+Next, since $x=x_{0}+ru$ define $x_{n}=x_{0}+r\left( 1-\frac{1}{n} \right)u\in X$. Then 
+$$\lVert x_{n}-x \rVert=r\left( 1-\frac{1}{n} \right)\lVert u \rVert=r\left( 1-\frac{1}{n} \right)<r$$
+so $x\in B(x_{0},r)$ **for all** $n$. Now, we would like to show that the sequence converges to $x$, $x_{n}-x=x_{0}-r\left( 1-\frac{1}{r} \right)u-x_{0}-ru=-\frac{1}{n}u$. So 
+$$\lVert x_{n}-x \rVert=\left|-\frac{1}{n}\right|\cdot \underbrace{\lVert u \rVert}_{=1}=\frac{1}{n}\stackrel{n\to  +\infty}{\to} 0$$
+so we proved $\lim_{n}x_{n}=x$, which means $\{x_{n}\}_{n}\subset B(x_{0},r)\implies x\in \overline{B(x_{0},r)}$. $\square$
 
-Personal comment: changing notation, instead of $x$, $x_{0}$, $y$ to $x$, $y$ and $z$ may make it easier to understand, at least it did for me.
+**Def.** Let $(X,\lVert \cdot \rVert)$ be a normed space, $Y \subset X$. We say that $Y$ is **dense** in $X$ if $\overline{Y}=X$.
+Note: this means that we can approximate any element in $X$ with a sequence in $Y$.
 
-Personal observation: actually the figure above can be misleading, when we have an open ball we don't consider the points which are in the boundary, by definition of the open ball, since we just consider the points strictly inside the radius $r$. The following is more illustrative (from "Functional Analysis, an elementary Introduction" by Marcus Haase).
-![[open-ball-is-open.png|250]]
-We also have the following results.
-**P.** $B_{C}(x_{0}, r)$ is a closed set. Indeed: $X \setminus B_{C}(x_{0}, r)=\{x\in X \ : \ \lVert x-x_{0} \rVert>r\}$ is open (**Exercise.** check this is an open set).
+**E.g.** In $(\mathbb{R},\left|\cdot \right|)$, $\mathbb{Q}$ is dense in $\mathbb{R}$, $\overline{\mathbb{Q}}=\mathbb{R}$, $x\in\mathbb{R}$ can be written as $x=\sum_{n\in \mathbb{Z}}a_{n}10^{n}$ (decimal representation), $a_{n}\in \{-9,-8,\ldots,8,9\}$, $=\lim_{N \to \infty}\sum_{n=-N}^{N}a_{n}10^{n}$ (note that this sum is in $\mathbb{Q}$). (TODO: Complement with 2022/2023 lecture notes)
 
-**P.** Finite intersections of open sets of $(X,\lVert \cdot \rVert)$ is an open set of $(X,\lVert \cdot \rVert)$.
-**P.** Any union of open sets of $(X,\lVert \cdot \rVert)$ is still an open set of $(X,\lVert \cdot \rVert)$.
-**P.** Finite unions of closed sets is closed.
-**P.** Any intersection of closed sets is closed. (**Exercise.** use de Morgan's rule to prove it) 
+**E.g.** In $(\mathbb{R},\left|\cdot \right|)$ also $\overline{\mathbb{R}\setminus \mathbb{Q}}=\mathbb{R}$.
 
-**E.g.** $X=\mathbb{R}$, $\lVert \cdot  \rVert=\left|\cdot \right|$, then:
-(1) $(a,b)$, $(b,+\infty)$, $(-\infty, a)$ are open subsets of $(\mathbb{R},\left|\cdot \right|)$, 
-(2) $[a,b]$, $\left[b, \infty\right)$, $\left(-\infty, a\right]$ and $\{a\}$ are closed (Q: why closed also with infinity? Is this related to the characterization in terms of limits?)
-(3) $\left[a,b\right)$, $\left(a,b\right]$ are neither open nor closed.
+**L.** Let $(X,\lVert \cdot \rVert)$ be a normed space, $Y \subset X$. Then $Y$ is dense in $X$ if and only if for any open set $O\subset C:Y \cap O \neq \emptyset$ (with $O \neq \emptyset$). $\boxed{Proof: exercise.}$
 
-Note: one has 
-$$[0,1]=\bigcap_{n\geq 1}\left( -\frac{1}{n}, 1+\frac{1}{n} \right)$$
-i.e. $B_{C}\left( \frac{1}{2},\frac{1}{2} \right)$ is not open. Note: this illustrates how the intersection of infinitely many open sets is not necessarily open. Moreover 
-$$(0,1)=\bigcup_{n\geq  1} \left[ \frac{1}{n}, 1-\frac{1}{n} \right]$$
-i.e. the union of infintitely many closed sets is not necessarily a closed set.
+Note: so this gives a way of checking if a set is dense.
 
-What are some fundamental concepts about the convergence of sequences?
-**Def.** A sequence is a function $f:\mathbb{N}\to X$, $n \mapsto f(n)=x_{n}$ (i.e. that yields the n-th element of a set $X$?) and we write it $\{x_{n}\}_{n}$ or $(x_{n})_{n}$.
+What is an interior point?
+**Def.** Let $(X,\lVert \cdot \rVert)$ be a normed space, $Y \subset X$. An element $y\in Y$ is called an **interior point** of $Y$ if there is $\varepsilon>0$ s.t. $B(y, \varepsilon)\subset Y$.
 
-**Def.** A subsequence of $\{x_{n}\}_{n}$ is a sequence of the form $\{x_{\varphi(n)}\}_{n}$ with $\varphi:\mathbb{N}\to \mathbb{N}$ strictly increasing (e.g. $\varphi(n)=2n$).
+What is the interior of a set?
+We define then $\text{Int}(Y)=\overset{o}{Y}=Y^{o}=\{y\in Y : y\text{ interior point of }Y\}$ (the first equalities are just a matter of notation). Note: (1) $\text{Int}(Y)\subset Y$, $Y$ open $\iff$ $Y=\text{Int}(Y)$, (2) $\text{Int}(Y)$ is open (**Exercise.** check it). 
 
-**Def.** Let $(X,\lVert \cdot \rVert)$ be a normed space. A sequence $\{x_{n}\}_{n}\subset X$ is said to converge to $x\in X$ if 
-$$\lim_{n \to \infty} \lVert x_{n}-x \rVert=0$$
-i.e. $\forall \  \varepsilon>0$, $\exists \  N\in \mathbb{N}$, s.t. $\lVert x_{n}-x \rVert<\varepsilon\ \ \forall \ n\in \mathbb{N}$ (shouldn't be $\forall \ n\geq N$? Yes actually, it was a typo), so instead of $\forall \ n\in \mathbb{N}$ it should be $n\geq N$. We write $\lim_{n}x_{n}=x$ (or $x_{n}\stackrel{\lVert \cdot  \rVert}{\to}x$) and $x$ is called the limit of $\{x_{n}\}_{n}\subset X$.
+$\text{Int}(Y)$ is actually the biggest open set contained in $Y$, i.e. 
+$$\text{Int}(Y)=\bigcup_{\substack{O\text{ open} \\ O\subset Y}}O$$
+(by 1 and 2). Why is it exactly equal? 
+$$\bigcup_{\substack{O\text{ open} \\ O\subset Y}}O\subset \text{Int}(Y)$$
+because if $O\subset Y$, $O$ open, $O \neq \emptyset$ for $y\in O$, $y\in Y$, $\exists \ \varepsilon>0$ s.t. $B(y, \varepsilon)\subset O\subset Y$ which means $y$ is an interior point of $Y$, therefore $y\in \text{Int}(Y)$.
 
-**Thm.** Let $\{x_{n}\}_{n}\subset X$ be a convergent sequence of $(X,\lVert \cdot \rVert)$. Then: 
-(1) the limit $x=\lim_{n}x_{n}$ is unique
-(2) any subsequence of $\{x_{n}\}_{n}\in X$ converges to $x\in X$
-(3) one has $\lim_{n}\lVert x_{n} \rVert=\lVert x \rVert$ (in $\mathbb{R}$), in particular $\sup_{n}\lVert x_{n} \rVert<\infty$
-(4) if $\{x_{n}\}_{n}\subset X$ converges to $x\in X$, $\{y_{n}\}_{n}\subset X$ converges to $y\in X$ and $\{\alpha_{n}\}_{n}\subset \mathbb{R}$ converges to $\alpha\in\mathbb{R}$, then $\{x_{n}+\alpha_{n}y_{n}\}_{n}\subset X$ converges to $x+\alpha y\in X$.
+**L.** $(X,\lVert \cdot \rVert)$ normed space, $Y \subset X$. One has $\overline{X\setminus Y}=X\setminus \text{Int}(Y)$ (from above, simple exercise with de Morgan rule). **E. Prove it.**
 
-**Proof of (1) (sketch).** Assume (by contradiction) $x$ and $y$ are two elements of $X$ such that $\lim_{n}x_{n}=x$ and $\lim_{n}x_{n}=y$, i.e. $\lim_{n}\lVert x_{n}-x \rVert=0$ and $\lim_{n}\lVert y_{n}-x \rVert=0$, then $\forall \  \varepsilon>0$ (fixed, this is important), $\exists \  N_{1}\in \mathbb{N}$ such that $\lVert x_{n}-x \rVert<\varepsilon\ \ \forall \ n\geq N_{1}$ and for the same reason $\exists \  N_{2}\in \mathbb{N}$ s.t. $\lVert x_{n}-y \rVert<\varepsilon\ \ \forall \ n\geq N_{2}$ (at some point both distances are less than $\varepsilon$). Pick $n\geq \max(N_{1},N_{2})$, then 
-$$\lVert x-y \rVert=\lVert x-x_{n}+x_{n}-y \rVert\leq \lVert x-x_{n} \rVert+\lVert x_{n}-y \rVert<\varepsilon+\varepsilon$$
-(where the first epsilon is for $n\geq N_{1}$ and the second is for $n\geq N_{2}$), so what we proved is that $\forall \  \varepsilon>0$, $0\leq \lVert x-y \rVert<2\varepsilon \implies \lVert x-y \rVert=0 \stackrel{\text{uniqueness}}{\implies }x-y=0_{X} \implies x=y$. $\square$ 
+**E.g.** $\text{Int}(\mathbb{Q})=\emptyset$ in $(\mathbb{R},\left|\cdot \right|)\iff \overline{\mathbb{R}\setminus \mathbb{Q}}=\mathbb{R}$.
 
-**Proof of (3) (sketch).** We use the reverse triangle inequality: $\left|\lVert x \rVert-\lVert y \rVert\right|\leq \lVert x-y \rVert\ \ \forall \ x,y\in X$, $[\lVert x \rVert=\lVert x-y+y \rVert\leq \lVert x-y \rVert+\lVert y \rVert\to \lVert x \rVert-\lVert y \rVert\leq \lVert x-y \rVert]$.
+What is a limit point?  
+**Def.** $(X,\lVert \cdot \rVert)$, $\{x_{n}\}_{n}\subset X$ be given. We say that $x$ is a **limit point** of $\{x_{n}\}_{n}$ if there is a subsequence $\{x_{\varphi(n)}\}_{n}$ of $\{x_{n}\}_{n}$ which converges to $x$, i.e. $\lim_{n}\lVert x_{\varphi(n)}-x \rVert=0$.
 
+**E.g** On $(\mathbb{R},| \cdot |)$, the sequence $\{(-1)^{n}\}_{n}$ has two limit points which are +1 and -1.
 
+**P.** If $(X,\lVert \cdot \rVert)$ is a normed space and $Y \subset X$, then 
+$$\overline{Y}=\{x\in X: x\text{ limit point of a sequence in }Y\}$$
+When do we say that two norms are equivalent?
+**Def.** Let $X$ be an $\mathbb{R}$-vector space. We say that two norms $\mathcal{N}_{1}$ and $\mathcal{N}_{2}$ are **equivalent** if there exist two positive constants $c_{1}>0$, $c_{2}>0$ such that $\mathcal{N}_{1}(x)\leq c_{1}\mathcal{N}_{2}(x)$ and $\mathcal{N}_{2}(x)\leq c_{2}\mathcal{N}_{1}(x)\ \ \forall \ x\in X$.
 
+What is the idea behind this? If you have a ball on the norm $\mathcal{N}_{2}$ with radius $r$, then that ball is contained in the norm $\mathcal{N}_{1}$ (and viceversa). (Q: what does this actually mean?) Note: two equivalent norms on $X$ induce the same open sets (topology), $O$ open for $\mathcal{N}_{1}\Leftrightarrow  O$ open for $\mathcal{N}_{2}$.
 
+**E.g.** $X=\mathscr{C}(I)$, $I=[0,1]$, $\lVert f \rVert_{1}=\int_{0}^{1}\left|f(t)\right|dt$, $\lVert f \rVert_{\infty}=\sup_{t\in [0,1]}\left|f(t)\right|$ are two norms on $X$ but they are **not** equivalent. Why? Consider 
+$$f_{k}=\begin{cases} 0 & t\geq  \frac{1}{k} \\ 1-kt & t\in \left[0, \frac{1}{k}\right) \end{cases}$$
+TODO: make more illustrative picture to see better how the sequence behaves.
+![[FA03_0.excalidraw|250]]
+Then we have $\lVert f_{k} \rVert_{1}=\frac{1}{2}\cdot \frac{1}{k}$ (Q: why? Review computation of integrals) and $\lVert f_{k} \rVert_{\infty}=1$. (Q: what is the actual reasoning behind this, how would you explain it to someone who is not familiar with sequences of functions? Try to plug in numbers in place of k and see how it behaves.) so we see that $\lim_{k \to \infty}\lVert f_{k} \rVert_{1}=0$, $\lVert f_{k} \rVert=1$, there is no $c_{1}>0$ s.t. $\lVert f \rVert_{\infty}\leq c_{1}\lVert f \rVert_{1}\ \ \forall \ f\in X$ (but there is $c_{2}=1$ s.t. $\lVert f \rVert_{1}\leq c_{2}\lVert f \rVert_{\infty}$).

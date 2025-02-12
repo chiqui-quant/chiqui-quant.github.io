@@ -2,37 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:35559/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:35559/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:1313/posts/2025-02-11-second-post/</link>
+      <title>My First Post</title>
+      <link>http://localhost:35559/pages/fa/fa01/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/2025-02-11-second-post/</guid>
+      <guid>http://localhost:35559/pages/fa/fa01/</guid>
       
-      <description>&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What are some additional examples of normed spaces? $(\mathscr{C}(I),\lVert \cdot \rVert_{1,1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1,\infty})$, $(\mathscr{C}&lt;em&gt;{0}^{1}(I),\lVert \cdot \rVert&lt;/em&gt;{1})$.&lt;/li&gt;
-&lt;li&gt;What is an open/closed ball and an open/closed set?&lt;/li&gt;
-&lt;li&gt;Why an open ball is an open set?&lt;/li&gt;
-&lt;li&gt;What are some properties about unions and intersections of open and closed sets? (What are 2 examples that we have seen in $\mathbb{R}$ with $\left|\cdot \right|$)?&lt;/li&gt;
-&lt;li&gt;What is a sequence? What is a subsequence? When do we say that a sequence converges in a normed space? What is the first theorem that we have seen about the convergence of sequences in a normed space?&lt;/li&gt;
-&lt;/ul&gt;
-$$\lVert f \rVert_{1,1}=\int_{a}^{b}\left|f(t)\right|dt+\int_{a}^{b} \left|f&#39;(t)\right|dt\qquad \qquad \lVert f \rVert_{1, \infty}=\sup_{t\in  I}(\left|f(t)\right|+\left|f&#39;(t)\right|)$$$$\lVert f \rVert_{1}=\int_{a}^{b} \left|f&#39;(t)\right|dt\ \ \text{ and}\ \ \lVert f \rVert_{\infty}=\sup_{t\in  I}\left|f&#39;(t)\right|$$$$\lVert f \rVert_{1}=0\iff\int_{a}^{b} \left|f&#39;(t)\right|dt=0\iff  \left|f&#39;(t)\right|=0\ \ \forall \  t\in  I\iff  f&#39;(t)=0\ \ \forall \  t\in  I$$&lt;p&gt;
-which happens if and only if $f(t)$ is constant (not necessarily zero!).&lt;/p&gt;</description>
+      <description>&lt;p&gt;This will be our first lecture.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/2025-02-11-my-first-post/</link>
+      <link>http://localhost:35559/posts/2025-02-11-my-first-post/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/2025-02-11-my-first-post/</guid>
+      <guid>http://localhost:35559/posts/2025-02-11-my-first-post/</guid>
       
       <description>&lt;p&gt;&lt;strong&gt;Big Disclaimer:&lt;/strong&gt; I would like to improve the notes in some future with better explanations, but for now this is the best I can provide, I hope it will still be useful for you.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
@@ -48,11 +39,47 @@ which happens if and only if $f(t)$ is constant (not necessarily zero!).&lt;/p&g
     </item>
     
     <item>
+      <title>My Second Post</title>
+      <link>http://localhost:35559/posts/2025-02-11-second-post/</link>
+      <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
+      
+      <guid>http://localhost:35559/posts/2025-02-11-second-post/</guid>
+      
+      <description>&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is the characterization of closed sets in terms of sequences?&lt;/li&gt;
+&lt;li&gt;What is the closure of a subset of a normed space? What are some important observations about it?&lt;/li&gt;
+&lt;li&gt;Why the closure of an open ball is the closed ball?&lt;/li&gt;
+&lt;li&gt;When do we say that a subset in a normed space is dense? What are two examples of dense sets that we have seen in $(\mathbb{R},| \cdot |)$?&lt;/li&gt;
+&lt;li&gt;What does the lemma about density that we have seen say? How can we use it to check if a set is dense?&lt;/li&gt;
+&lt;li&gt;What is an interior point? What are some important observations about it?&lt;/li&gt;
+&lt;li&gt;What is a lemma that relats the closure and interior? What is an example?&lt;/li&gt;
+&lt;li&gt;What is a limit point? What is an example of limit point?&lt;/li&gt;
+&lt;li&gt;What does the proposition about limit points say?&lt;/li&gt;
+&lt;li&gt;When do we say that norms are equivalent?&lt;/li&gt;
+&lt;li&gt;What is an example of norms that are not equivalent? On $\mathscr{C}(I)$, $\lVert \cdot \rVert_{1}$ and $\lVert \cdot \rVert_{\infty}$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How can we characterize closed sets in terms of sequences? Q: What does the previous question actually mean?&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Preface</title>
+      <link>http://localhost:35559/pages/fa/fa00/</link>
+      <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
+      
+      <guid>http://localhost:35559/pages/fa/fa00/</guid>
+      
+      <description>&lt;p&gt;Here is some introduction.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:35559/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:35559/about/</guid>
       
       <description>&lt;p&gt;This place is meant to be a repository of serendipitous thoughts, a place to elaborate and share the ideas I have in mind at a given point in time. In ancient Greece it was used to define &amp;ldquo;hypomnemata&amp;rdquo; as the activity of recording thoughts, experiences and curiosities for later synthesis and reflection. Therefore, what you will find here are not absolute unchangable truths, but an evolution of views on a variety of topics.&lt;/p&gt;</description>
       
@@ -60,14 +87,13 @@ which happens if and only if $f(t)$ is constant (not necessarily zero!).&lt;/p&g
     
     <item>
       <title>Lecture Notes</title>
-      <link>http://localhost:1313/pages/lecturenotes/</link>
+      <link>http://localhost:35559/pages/lecturenotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/lecturenotes/</guid>
+      <guid>http://localhost:35559/pages/lecturenotes/</guid>
       
       <description>&lt;ul&gt;
-&lt;li&gt;Functional Analysis&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:35559/pages/fa/fa00/&#34;&gt;Functional Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
       
     </item>
