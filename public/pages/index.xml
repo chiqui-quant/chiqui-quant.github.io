@@ -2,47 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on My New Hugo Site</title>
-    <link>http://localhost:35559/pages/</link>
+    <link>http://localhost:38253/pages/</link>
     <description>Recent content in Pages on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:35559/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:38253/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://localhost:35559/pages/functional-analysis/fa01/</link>
+      <link>http://localhost:38253/pages/fa/fa01/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:35559/pages/functional-analysis/fa01/</guid>
+      <guid>http://localhost:38253/pages/fa/fa01/</guid>
       
       <description>&lt;p&gt;This will be our first lecture.&lt;/p&gt;</description>
       
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:35559/pages/functional-analysis/functional-analysis-moc/</link>
+      <title>Preface</title>
+      <link>http://localhost:38253/pages/fa/fa00/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:35559/pages/functional-analysis/functional-analysis-moc/</guid>
+      <guid>http://localhost:38253/pages/fa/fa00/</guid>
       
-      <description>&lt;p&gt;This is the guide&lt;/p&gt;</description>
+      <description>&lt;p&gt;Here is some introduction.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>Lecture Notes</title>
-      <link>http://localhost:35559/pages/lecturenotes/</link>
+      <link>http://localhost:38253/pages/lecturenotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:35559/pages/lecturenotes/</guid>
+      <guid>http://localhost:38253/pages/lecturenotes/</guid>
       
       <description>&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Functional Analysis&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./functional-analysis/funcional-analysis-moc.md&#34;&gt;Analysis&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:38253/pages/fa/fa00/&#34;&gt;Functional Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
       
     </item>

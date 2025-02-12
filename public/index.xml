@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:35559/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:35559/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://localhost:35559/pages/fa/fa01/</link>
+      <link>http://localhost:1313/pages/fa/fa01/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:35559/pages/fa/fa01/</guid>
+      <guid>http://localhost:1313/pages/fa/fa01/</guid>
       
       <description>&lt;p&gt;This will be our first lecture.&lt;/p&gt;</description>
       
@@ -20,10 +20,10 @@
     
     <item>
       <title>My First Post</title>
-      <link>http://localhost:35559/posts/2025-02-11-my-first-post/</link>
+      <link>http://localhost:1313/posts/2025-02-11-my-first-post/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:35559/posts/2025-02-11-my-first-post/</guid>
+      <guid>http://localhost:1313/posts/2025-02-11-my-first-post/</guid>
       
       <description>&lt;p&gt;&lt;strong&gt;Big Disclaimer:&lt;/strong&gt; I would like to improve the notes in some future with better explanations, but for now this is the best I can provide, I hope it will still be useful for you.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
@@ -40,10 +40,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:35559/posts/2025-02-11-second-post/</link>
+      <link>http://localhost:1313/posts/2025-02-11-second-post/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:35559/posts/2025-02-11-second-post/</guid>
+      <guid>http://localhost:1313/posts/2025-02-11-second-post/</guid>
       
       <description>&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -65,21 +65,29 @@
     
     <item>
       <title>Preface</title>
-      <link>http://localhost:35559/pages/fa/fa00/</link>
+      <link>http://localhost:1313/pages/fa/fa00/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:35559/pages/fa/fa00/</guid>
+      <guid>http://localhost:1313/pages/fa/fa00/</guid>
       
-      <description>&lt;p&gt;Here is some introduction.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;The following is a sequence of lecture notes from the course of Functional Analysis B(asic) from the M.Sc. in Stochastics and Data Science, given by prof. Bertrand Lods during 2021/2022. The motivation for publishing them in this blog serves multiple purposes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) to review what I think was one of the most challenging yet enjoyable courses I ever took&lt;/li&gt;
+&lt;li&gt;(2) to learn and practice a bit more of git version control in general&lt;/li&gt;
+&lt;li&gt;(3) to find the right balance between &amp;ldquo;overly verbal&amp;rdquo; and &amp;ldquo;puzzling condensed&amp;rdquo; notes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Regarding (1), I noticed that by reviewing the entire course material from start to finish multiple times usually allows me to understand better some parts or add and clarify details that I missed. For instance, now that I have some more experience and familiarity with the subject, almost two years, when I reviewed the very first lecture the other day, I was able to solve the proposed exercises, for which I felt completely lost the first time I wrote them down.&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>About</title>
-      <link>http://localhost:35559/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:35559/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       
       <description>&lt;p&gt;This place is meant to be a repository of serendipitous thoughts, a place to elaborate and share the ideas I have in mind at a given point in time. In ancient Greece it was used to define &amp;ldquo;hypomnemata&amp;rdquo; as the activity of recording thoughts, experiences and curiosities for later synthesis and reflection. Therefore, what you will find here are not absolute unchangable truths, but an evolution of views on a variety of topics.&lt;/p&gt;</description>
       
@@ -87,13 +95,13 @@
     
     <item>
       <title>Lecture Notes</title>
-      <link>http://localhost:35559/pages/lecturenotes/</link>
+      <link>http://localhost:1313/pages/lecturenotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:35559/pages/lecturenotes/</guid>
+      <guid>http://localhost:1313/pages/lecturenotes/</guid>
       
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:35559/pages/fa/fa00/&#34;&gt;Functional Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/pages/fa/fa00/&#34;&gt;Functional Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
       
     </item>

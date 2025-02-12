@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>http://localhost:35559/posts/</link>
+    <link>http://localhost:38253/posts/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:35559/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:38253/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://localhost:35559/posts/2025-02-11-my-first-post/</link>
+      <link>http://localhost:38253/posts/2025-02-11-my-first-post/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:35559/posts/2025-02-11-my-first-post/</guid>
+      <guid>http://localhost:38253/posts/2025-02-11-my-first-post/</guid>
       
       <description>&lt;p&gt;&lt;strong&gt;Big Disclaimer:&lt;/strong&gt; I would like to improve the notes in some future with better explanations, but for now this is the best I can provide, I hope it will still be useful for you.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:35559/posts/2025-02-11-second-post/</link>
+      <link>http://localhost:38253/posts/2025-02-11-second-post/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:35559/posts/2025-02-11-second-post/</guid>
+      <guid>http://localhost:38253/posts/2025-02-11-second-post/</guid>
       
       <description>&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -49,19 +49,6 @@
 &lt;li&gt;What is an example of norms that are not equivalent? On $\mathscr{C}(I)$, $\lVert \cdot \rVert_{1}$ and $\lVert \cdot \rVert_{\infty}$.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;How can we characterize closed sets in terms of sequences? Q: What does the previous question actually mean?&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>My Second Post</title>
-      <link>http://localhost:35559/posts/2025-02-12-cool-things/</link>
-      <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
-      
-      <guid>http://localhost:35559/posts/2025-02-12-cool-things/</guid>
-      
-      <description>&lt;h2 id=&#34;there-are-many-cool-things-out-there-to-learn&#34;&gt;There are many cool things out there to learn&lt;/h2&gt;
-&lt;p&gt;Many things occurred since &lt;a href=&#34;http://localhost:35559/articles/article00003&#34;&gt;my last post&lt;/a&gt;, where I posted a raw draft of my bachelor dissertation and a random example of manim animation I was working on. In this post I will try to recap what I have been working on in the last 9 months and try to establish plans for the future.&lt;/p&gt;
-&lt;p&gt;I graduated in economics and, to make a long story short, I can say it was a nice experience overall, in particular the last year was full of interesting subjects and lead me to the discovery of what is called quantitative or mathematical finance.&lt;/p&gt;</description>
       
     </item>
     
