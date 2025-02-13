@@ -8,13 +8,19 @@
     <language>en-gb</language>
     <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
+      <title>FA - Lecture 01</title>
       <link>http://localhost:1313/pages/fa/fa01/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
       <guid>http://localhost:1313/pages/fa/fa01/</guid>
       
-      <description>&lt;p&gt;This will be our first lecture.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;chapter-1-normed-spaces&#34;&gt;Chapter 1: Normed Spaces&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;What is a vector space?&lt;/li&gt;
+&lt;li&gt;What is a norm and what is a normed space?&lt;/li&gt;
+&lt;li&gt;What are some examples of normed spaces? $(\mathbb{R}^{n},\lVert \cdot \rVert_{e})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{1})$, $(\mathbb{R}^{n},\lVert \cdot  \rVert_{\infty})$, $(\ell^{1}(\mathbb{N}),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{\infty})$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A normed space is a space on which you can define a norm. Now, we should try to understand what is a space and what is a norm. Note that this is not the most general possible framework. More general are topological spaces, inside them we find metric spaces. But since they present some strange pathological things we start directly from the even smaller subset of normed spaces.&lt;/p&gt;</description>
       
     </item>
     

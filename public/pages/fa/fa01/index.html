@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=34467&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">My First Post | Chiqui Quant</title>
-<meta property="og:title" content="My First Post | Chiqui Quant" />
-<meta name="twitter:title" content="My First Post | Chiqui Quant" />
-<meta itemprop="name" content="My First Post | Chiqui Quant" />
-<meta name="application-name" content="My First Post | Chiqui Quant" />
+<title itemprop="name">FA - Lecture 01 | Chiqui Quant</title>
+<meta property="og:title" content="FA - Lecture 01 | Chiqui Quant" />
+<meta name="twitter:title" content="FA - Lecture 01 | Chiqui Quant" />
+<meta itemprop="name" content="FA - Lecture 01 | Chiqui Quant" />
+<meta name="application-name" content="FA - Lecture 01 | Chiqui Quant" />
 <meta property="og:site_name" content="Awesome hugo blog" />
 
 <meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en-gb" />
 <meta name="language" content="en-gb" />
 
-  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/pages/fa/fa01/" title="English" />
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:34467/pages/fa/fa01/" title="English" />
 
 
 
@@ -28,10 +28,10 @@
 <meta name="generator" content="Hugo 0.143.1">
 
     
-    <meta property="og:url" content="http://localhost:1313/pages/fa/fa01/">
+    <meta property="og:url" content="http://localhost:34467/pages/fa/fa01/">
   <meta property="og:site_name" content="Chiqui Quant">
-  <meta property="og:title" content="My First Post">
-  <meta property="og:description" content="This will be our first lecture.">
+  <meta property="og:title" content="FA - Lecture 01">
+  <meta property="og:description" content="Chapter 1: Normed Spaces What is a vector space? What is a norm and what is a normed space? What are some examples of normed spaces? $(\mathbb{R}^{n},\lVert \cdot \rVert_{e})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{1})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{\infty})$, $(\ell^{1}(\mathbb{N}),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{\infty})$ A normed space is a space on which you can define a norm. Now, we should try to understand what is a space and what is a norm. Note that this is not the most general possible framework. More general are topological spaces, inside them we find metric spaces. But since they present some strange pathological things we start directly from the even smaller subset of normed spaces.">
   <meta property="og:locale" content="en_gb">
   <meta property="og:type" content="article">
     <meta property="article:section" content="pages">
@@ -42,13 +42,13 @@
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="My First Post">
-  <meta name="twitter:description" content="This will be our first lecture.">
+  <meta name="twitter:title" content="FA - Lecture 01">
+  <meta name="twitter:description" content="Chapter 1: Normed Spaces What is a vector space? What is a norm and what is a normed space? What are some examples of normed spaces? $(\mathbb{R}^{n},\lVert \cdot \rVert_{e})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{1})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{\infty})$, $(\ell^{1}(\mathbb{N}),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{\infty})$ A normed space is a space on which you can define a norm. Now, we should try to understand what is a space and what is a norm. Note that this is not the most general possible framework. More general are topological spaces, inside them we find metric spaces. But since they present some strange pathological things we start directly from the even smaller subset of normed spaces.">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/pages/fa/fa01/">
+    <link rel="canonical" href="http://localhost:34467/pages/fa/fa01/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -62,7 +62,7 @@
 
 
 
-<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+<link rel="manifest" href="http://localhost:34467/site.webmanifest">
 
 <meta name="msapplication-config" content="/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -82,8 +82,12 @@
     loader:{
       load: ['ui/safe']
     },
+    chtml: {
+      scale: 0.8 
+    },
   };
 </script>
+
  
 
     
@@ -95,7 +99,7 @@
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
-        <a href="http://localhost:1313/" class="logo">
+        <a href="http://localhost:34467/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -163,7 +167,7 @@ stroke-linejoin="round" class="feather feather-home">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
-                <h1 class="header-title">My First Post</h1>
+                <h1 class="header-title">FA - Lecture 01</h1>
                 
                 
                 
@@ -174,7 +178,82 @@ stroke-linejoin="round" class="feather feather-home">
             </header>
             
             <div class="page-content">
-                <p>This will be our first lecture.</p>
+                <h1 id="chapter-1-normed-spaces">Chapter 1: Normed Spaces</h1>
+<ul>
+<li>What is a vector space?</li>
+<li>What is a norm and what is a normed space?</li>
+<li>What are some examples of normed spaces? $(\mathbb{R}^{n},\lVert \cdot \rVert_{e})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{1})$, $(\mathbb{R}^{n},\lVert \cdot  \rVert_{\infty})$, $(\ell^{1}(\mathbb{N}),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{\infty})$</li>
+</ul>
+<p>A normed space is a space on which you can define a norm. Now, we should try to understand what is a space and what is a norm. Note that this is not the most general possible framework. More general are topological spaces, inside them we find metric spaces. But since they present some strange pathological things we start directly from the even smaller subset of normed spaces.</p>
+<p>We assume the space (set) of elements we are dealing with is a vector space. In practice we will always just use $\mathbb{R}$ vector spaces, but the theory can be extended for $\mathbb{C}$.</p>
+<p>What is a vector space? A collection of elements with two operations.</p>
+<p><strong>TODO:</strong> add details about fields from Cummings book. <br>
+<strong>TODO:</strong> reduce space between paragraphs.<br>
+<strong>TODO:</strong> generalize css and html to be cleaner in the markdown notes and avoid repeating the same template everytime.</p>
+<div class="warning" style="position: relative; padding: 0.7em 0.7em 0.7em 1.5em; margin: 1em;">
+    <div class="title">
+        <strong>[D.][Vector Space]</strong>
+    </div>
+    <div class="content">
+        <span>
+A $\mathbb{K}=\mathbb{R}$ (or $\mathbb{K}=\mathbb{C}$) vector space, where $\mathbb{K}$ is a field and $X$ is a non-empty set on which we can define two operations:
+<ul>
+<li>Sum (addition): given $x,y\in X$ we can define a third element $x+y\in X$ which is the sum of $x$ and $y$. Note: the third element &ldquo;$x+y$&rdquo; is treated as a single entity/object, if you want you can call it $z=x+y$.</li>
+<li>Scalar multiplication: given $X\in X, \alpha\in \mathbb{K}$ we can define $\alpha\cdot x\in X$ as the product of $\alpha\in \mathbb{K}$ with $x\in X$.</li>
+</ul>
+<p>These operations satisfy the following properties (note that these are part of the definition):
+(0) Closed $+$ and $\cdot$: if you take $x\in X,y\in X$ the operation is still inside the set ie. $x+y\in X$ and if $x\in X,\alpha\in \mathbb{K}\Rightarrow \alpha\cdot x\in X$ (ie. all elements are still inside the set when scaled).
+(1)
+</span>
+</div></p>
+</div>
+<style>
+
+    .warning::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .warning::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10px; /* this is the line above */
+        height: 2.5px;
+        background-color: #ffffff;
+    }
+
+        .warning span::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100px; /* this is the line below */
+            height: 2.5px;
+            background-color: #ffffff;
+        }
+
+    .title {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        transform: translateY(-50%);
+        background-color: inherit;
+        padding-right: 5px;
+    }
+
+    .title strong {
+        display: inline-block;
+    }
+
+
+</style>
 
             </div>
         </article></main>
@@ -242,7 +321,7 @@ stroke-linejoin="round" class="feather feather-home">
 
 
     
-    <script async src="http://localhost:1313/js/main.js" ></script>
+    <script async src="http://localhost:34467/js/main.js" ></script>
 
     
 
