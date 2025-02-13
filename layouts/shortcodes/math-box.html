@@ -1,0 +1,65 @@
+<!--<div class="warning">-->
+<!--  <div class="title">-->
+<!--    <strong>{{ .Get 0 }}</strong>-->
+<!--  </div>-->
+<!--  <div class="content">-->
+<!--    {{ .Inner }}-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="warning" style="position: relative; padding: 0.7em 0.7em 0.7em 1.5em; margin: 1em;">
+    <div class="title">
+        <strong>{{ .Get "title" }}</strong>
+    </div>
+    <div class="content">
+        <span>
+            {{ .Inner }}
+        </span>
+    </div>
+</div>
+
+<style>
+    .warning::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .warning::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10px; /* this is the line above */
+        height: 2.5px;
+        background-color: #ffffff;
+    }
+
+    .warning span::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100px; /* this is the line below */
+        height: 2.5px;
+        background-color: #ffffff;
+    }
+
+    .title {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        transform: translateY(-50%);
+        background-color: inherit;
+        padding-right: 5px;
+    }
+
+    .title strong {
+        display: inline-block;
+    }
+</style>

@@ -40,6 +40,14 @@
 
     <!--{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}-->
       {{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
+  {{/* Styles */}}
+  {{- $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "style.css") | minify | fingerprint }}
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+
+  {{- $math_box_css := resources.Get "css/math-box.css" | minify }}  {{/* Include math-box CSS - CRUCIAL */}}
+  {{ if $math_box_css }}
+    <link rel="stylesheet" href="{{ $math_box_css.RelPermalink }}">
+  {{ end }}
 
     {{/* Google analytics script. See hugo.toml to enable/disable this. */}}
     {{- if hugo.IsProduction | or (eq site.Params.env "production") }}

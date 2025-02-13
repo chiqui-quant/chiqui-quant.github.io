@@ -1,0 +1,4 @@
+{{- $math_box_css := resources.Get "css/math-box.css" | minify }}
+{{ if $math_box_css }}
+  <link rel="stylesheet" href="{{ $math_box_css.RelPermalink }}">
+{{ end }}
