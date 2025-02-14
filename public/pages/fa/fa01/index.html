@@ -386,6 +386,22 @@ Therefore $(\mathbb{R}^{n}, +,\bullet)$ is a vector space. $\bigstar$
     <div class="content">
         <span>
             
+Let $X=\mathscr{C}(\mathbb{R})=\{f:\mathbb{R}\to\mathbb{R}\text{ continuous}\}$. The claim is that this is a vector space. But in order to check it we first have to understand is how to define addition and scalar multiplication. What does it mean to sum two functions? The intuitive thing is to sum their values at any point. Given, $f,g\in X$ (so this means they are both real valued and continuous), def. $h=f+g$ st. $x \mapsto h(x)=f(x)+g(x)$ ie. the function which to a point $x$ associates the sum of the values of $f$ and $g$ in that point, ie. the sum of the images. 
+
+**N.** We could use $h(x)=f(x)+2g(x)$ but we would lose the commutative property of the sum, \[$\color{lime}\textbf{Q}$. How?] because for instance... 
+$$h(x)+j(x)=[f(x)+2g(x)]+[]$$
+(TODO: review this and clarify).
+Now the question is, is it true that $h\in X$? Ie. is the space closed for sum and multiplication?
+
+Sum: it's not enough to have $h:\mathbb{R}\to \mathbb{R}$ because to belong to the space $X$ it must also be continuous. But from real analysis one can prove that the sum of continuous functions is again continuous, so this is ok.
+
+Multiplication: given $f\in X$ and $\alpha\in \mathbb{R}$, define $\alpha f:\mathbb{R}\to \mathbb{R}$ st. $x \mapsto (\alpha f)(x)=\alpha f(x)$. So we define the function $\alpha f$ to be the value $f(x)$ scaled by $\alpha$. Again, from real analysis it is possible to prove that $\alpha f$ that we defined is also continuous. **E.** Play with $\varepsilon$ and $\delta$ and try to prove it.
+
+Thus $X=\mathscr{C}(\mathbb{R})$ is closed under addition and scalar multiplication, which makes it a vector space. \[$\color{lime}\textbf{Q}$. We get all properties automatically from the fact that it is closed for + e $\bullet$?] **E.** Check all properties of vsp. 
+
+Another important question. What is the origin of this space? In other words, what is the zero of the space $0_{X}$? Ie. what is the function st. if you sum you still get the original function?
+
+Consider $0_{X}:\mathbb{R}\to\mathbb{R}$ st. $x \mapsto 0_{X}(x)$ st. $f+0_{X}=f \forall \ f$ ie. $f(t)+0_{X}(t)=f(t)$. 
 
 
         </span>
