@@ -6,7 +6,93 @@
     <description>Recent content on Chiqui Quant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FA - Lecture 02</title>
+      <link>http://localhost:1313/pages/fa/fa02/</link>
+      <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/fa/fa02/</guid>
+      
+      <description>&lt;ul&gt;
+&lt;li&gt;What are some additional examples of normed spaces? $(\mathscr{C}(I),\lVert \cdot \rVert_{1,1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1,\infty})$, $(\mathscr{C}&lt;em&gt;{0}^{1}(I),\lVert \cdot \rVert&lt;/em&gt;{1})$.&lt;/li&gt;
+&lt;li&gt;What is an open/closed ball and an open/closed set?&lt;/li&gt;
+&lt;li&gt;How to prove that an open ball is an open set?&lt;/li&gt;
+&lt;li&gt;What are some properties about unions and intersections of open and closed sets? (What are 2 examples that we have seen in $\mathbb{R}$ with $\left|\cdot \right|$)?&lt;/li&gt;
+&lt;li&gt;What is a sequence? What is a subsequence? When do we say that a sequence converges in a normed space? What is the first theorem that we have seen about the convergence of sequences in a normed space? (characterization of convergence in normed spaces)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;warning&#34; style=&#34;position: relative; padding: 0.7em 0.7em 0.7em 1.5em; margin: 1em;&#34;&gt;
+    &lt;div class=&#34;title&#34;&gt;
+        &lt;strong&gt;[Eg.]&lt;/strong&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;content&#34;&gt;
+        &lt;span&gt;
+            
+  
+
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .warning::before {
+        content: &#39;&#39;;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .warning::after {
+        content: &#39;&#39;;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10px;  
+        height: 2.5px;
+        background-color: #ffffff;
+    }
+
+    .warning span::after {
+        content: &#39;&#39;;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100px;  
+        height: 2.5px;
+        background-color: #ffffff;
+    }
+
+    .title {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        transform: translateY(-50%);
+        background-color: inherit;
+        padding-right: 5px;
+    }
+
+    .title strong {
+        display: inline-block;
+    }
+&lt;/style&gt;
+
+&lt;hr&gt;</description>
+      
+    </item>
+    
     <item>
       <title>FA - Lecture 01</title>
       <link>http://localhost:1313/pages/fa/fa01/</link>
@@ -20,7 +106,7 @@
 &lt;li&gt;What is a norm and what is a normed space?&lt;/li&gt;
 &lt;li&gt;What are some examples of normed spaces? $(\mathbb{R}^{n},\lVert \cdot \rVert_{e})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{1})$, $(\mathbb{R}^{n},\lVert \cdot  \rVert_{\infty})$, $(\ell^{1}(\mathbb{N}),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{\infty})$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;A normed space is a space on which you can define a norm. Now, we should try to understand what is a space and what is a norm. Note that this is not the most general possible framework. More general are topological spaces, inside them we find metric spaces. But since they present some strange pathological things we start directly from the even smaller subset of normed spaces.&lt;/p&gt;</description>
+&lt;p&gt;A normed space is a space on which you can define a norm. Now, we should try to understand what is a space and what is a norm. Before diving in, note that this is not the most general possible framework. More general are topological spaces, inside them we find metric spaces. But since they present some strange pathological things we start directly from the even smaller subset of normed spaces.&lt;/p&gt;</description>
       
     </item>
     
