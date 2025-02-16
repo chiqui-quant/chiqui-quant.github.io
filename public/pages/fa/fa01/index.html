@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=38479&amp;path=livereload" data-no-instant defer></script>
+	<link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+	<script src="https://tikzjax.com/v1/tikzjax.js"></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,7 +20,7 @@
 <meta property="og:locale" content="en-gb" />
 <meta name="language" content="en-gb" />
 
-  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/pages/fa/fa01/" title="English" />
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:38479/pages/fa/fa01/" title="English" />
 
 
 
@@ -28,7 +30,7 @@
 <meta name="generator" content="Hugo 0.143.1">
 
     
-    <meta property="og:url" content="http://localhost:1313/pages/fa/fa01/">
+    <meta property="og:url" content="http://localhost:38479/pages/fa/fa01/">
   <meta property="og:site_name" content="Chiqui Quant">
   <meta property="og:title" content="FA - Lecture 01">
   <meta property="og:description" content="Chapter 1: Normed Spaces What is a vector space? What is a norm and what is a normed space? What are some examples of normed spaces? $(\mathbb{R}^{n},\lVert \cdot \rVert_{e})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{1})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{\infty})$, $(\ell^{1}(\mathbb{N}),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{\infty})$ A normed space is a space on which you can define a norm. Now, we should try to understand what is a space and what is a norm. Before diving in, note that this is not the most general possible framework. More general are topological spaces, inside them we find metric spaces. But since they present some strange pathological things we start directly from the even smaller subset of normed spaces.">
@@ -48,7 +50,7 @@
 
     
 
-    <link rel="canonical" href="http://localhost:1313/pages/fa/fa01/">
+    <link rel="canonical" href="http://localhost:38479/pages/fa/fa01/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -62,7 +64,7 @@
 
 
 
-<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+<link rel="manifest" href="http://localhost:38479/site.webmanifest">
 
 <meta name="msapplication-config" content="/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -95,6 +97,7 @@
     <link rel="stylesheet" href="/css/math-box.min.css">
   
 
+
     
     
 </head>
@@ -104,7 +107,7 @@
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
-        <a href="http://localhost:1313/" class="logo">
+        <a href="http://localhost:38479/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -1348,6 +1351,32 @@ This concludes our first lecture. To briefly recap: we started from the definiti
 <p>Then we defined a norm as a function which assigns a number to an element of a set, representing the distance from the origin. Finally, for the vector spaces that we saw we constructed different functions which satisfied the definition of norm.</p>
 <p><strong>Spoiler</strong>
 In the next lecture we will see another example of normed space similar to $\mathscr{C}(I)$ but slightly more triky. Then we will introduce some notions of topology which will be fundamental for the rest of the course.</p>
+<script type="text/tikz">
+  \begin{tikzpicture}
+    \draw (0,0) circle (1in);
+  \end{tikzpicture}
+</script>
+<script type="text/tikz">
+  \begin{tikzcd}
+    A \arrow[r, "\phi"] \arrow[d, red]
+      & B \arrow[d, "\psi" red] \\
+    C \arrow[r, red, "\eta" blue]
+      & |[blue, rotate=-15]| D
+  \end{tikzcd}
+</script>
+<script type="text/tikz">
+\usetikzlibrary{arrows,backgrounds,positioning,fit}
+\begin{document}
+\begin{tikzpicture}
+\node [rectangle,draw] (set a) [label={[name=T1]right:$T_1$}]                 {\textit{SET A}};
+\node [rectangle,draw] (set b) [below=of set a, label={[name=T2]right:$T_2$}] {\textit{SET B}};
+
+\begin{pgfonlayer}{background}
+   \node [fill=black!0,fit=(set a) (T2)] {};
+\end{pgfonlayer}
+
+\end{tikzpicture}
+</script>
 
             </div>
         </article></main>
@@ -1415,7 +1444,7 @@ In the next lecture we will see another example of normed space similar to $\mat
 
 
     
-    <script async src="http://localhost:1313/js/main.js" ></script>
+    <script async src="http://localhost:38479/js/main.js" ></script>
 
     
 

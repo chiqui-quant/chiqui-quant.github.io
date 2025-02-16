@@ -1,4 +1,6 @@
 <head>
+	<link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+	<script src="https://tikzjax.com/v1/tikzjax.js"></script>
     {{- partial "meta/main.html" . }}
     {{- hugo.Generator }}
 
@@ -48,6 +50,7 @@
   {{ if $math_box_css }}
     <link rel="stylesheet" href="{{ $math_box_css.RelPermalink }}">
   {{ end }}
+
 
     {{/* Google analytics script. See hugo.toml to enable/disable this. */}}
     {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
