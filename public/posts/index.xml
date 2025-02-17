@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Chiqui Quant</title>
-    <link>http://localhost:38479/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Chiqui Quant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:38479/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 12:29:26 +0100</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://localhost:38479/posts/2025-02-11-my-first-post/</link>
+      <link>http://localhost:1313/posts/2025-02-11-my-first-post/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:38479/posts/2025-02-11-my-first-post/</guid>
+      <guid>http://localhost:1313/posts/2025-02-11-my-first-post/</guid>
       
       <description>&lt;p&gt;&lt;strong&gt;Big Disclaimer:&lt;/strong&gt; I would like to improve the notes in some future with better explanations, but for now this is the best I can provide, I hope it will still be useful for you.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:38479/posts/2025-02-11-second-post/</link>
+      <link>http://localhost:1313/posts/2025-02-11-second-post/</link>
       <pubDate>Tue, 11 Feb 2025 12:29:26 +0100</pubDate>
       
-      <guid>http://localhost:38479/posts/2025-02-11-second-post/</guid>
+      <guid>http://localhost:1313/posts/2025-02-11-second-post/</guid>
       
       <description>&lt;p&gt;&lt;strong&gt;Questions&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;

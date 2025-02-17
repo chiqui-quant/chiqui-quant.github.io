@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=38479&amp;path=livereload" data-no-instant defer></script>
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
 	<script src="https://tikzjax.com/v1/tikzjax.js"></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
@@ -20,17 +20,17 @@
 <meta property="og:locale" content="en-gb" />
 <meta name="language" content="en-gb" />
 
-  <link rel="alternate" hreflang="en-gb" href="http://localhost:38479/pages/fa/fa01/" title="English" />
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/pages/fa/fa01/" title="English" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.143.1">
+<meta name="generator" content="Hugo 0.144.0">
 
     
-    <meta property="og:url" content="http://localhost:38479/pages/fa/fa01/">
+    <meta property="og:url" content="http://localhost:1313/pages/fa/fa01/">
   <meta property="og:site_name" content="Chiqui Quant">
   <meta property="og:title" content="FA - Lecture 01">
   <meta property="og:description" content="Chapter 1: Normed Spaces What is a vector space? What is a norm and what is a normed space? What are some examples of normed spaces? $(\mathbb{R}^{n},\lVert \cdot \rVert_{e})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{1})$, $(\mathbb{R}^{n},\lVert \cdot \rVert_{\infty})$, $(\ell^{1}(\mathbb{N}),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{1})$, $(\mathscr{C}(I),\lVert \cdot \rVert_{\infty})$ A normed space is a space on which you can define a norm. Now, we should try to understand what is a space and what is a norm. Before diving in, note that this is not the most general possible framework. More general are topological spaces, inside them we find metric spaces. But since they present some strange pathological things we start directly from the even smaller subset of normed spaces.">
@@ -50,7 +50,7 @@
 
     
 
-    <link rel="canonical" href="http://localhost:38479/pages/fa/fa01/">
+    <link rel="canonical" href="http://localhost:1313/pages/fa/fa01/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -64,7 +64,7 @@
 
 
 
-<link rel="manifest" href="http://localhost:38479/site.webmanifest">
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
 
 <meta name="msapplication-config" content="/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
@@ -107,7 +107,7 @@
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
-        <a href="http://localhost:38479/" class="logo">
+        <a href="http://localhost:1313/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -1366,17 +1366,40 @@ In the next lecture we will see another example of normed space similar to $\mat
 </script>
 <script type="text/tikz">
 \usetikzlibrary{arrows,backgrounds,positioning,fit}
-\begin{document}
 \begin{tikzpicture}
 \node [rectangle,draw] (set a) [label={[name=T1]right:$T_1$}]                 {\textit{SET A}};
 \node [rectangle,draw] (set b) [below=of set a, label={[name=T2]right:$T_2$}] {\textit{SET B}};
-
 \begin{pgfonlayer}{background}
    \node [fill=black!0,fit=(set a) (T2)] {};
 \end{pgfonlayer}
-
 \end{tikzpicture}
 </script>
+<div style="display: flex; justify-content: center;">
+  <script type="text/tikz">
+    \begin{tikzpicture}
+      \fill[white] (-1.5,-1.5) rectangle (1.5,1.5);
+      \draw (0,0) circle (1cm);
+      \draw (-1,0) -- (1,0);
+      \draw (0,-1) -- (0,1);
+    \end{tikzpicture}
+  </script>
+</div>
+<div style="display: flex; justify-content: center;">
+  <script type="text/tikz">
+    \begin{tikzpicture}
+     \fill[white] (-5,-5) rectangle (5,5);
+	\draw[dashed] circle(4);
+	\draw[fill] circle(2pt);
+	% \draw (0,0) -- (35:3);
+	\draw (0,0) node [below] {$x_{0}$} -- (0:4) (4,3) node {$B(x_{0}, r)$};
+	\draw[dashed] (2.5,0) circle(1.5);
+	\draw[fill] (2.5,0) circle(2pt) node [below] {$x$} +(-1,-0.2) node {$\rho$} ++(0,-1) node {$B(x, \varepsilon)$};
+	\draw (2.5,0) -- (3.5,0.5);
+	\draw (0,0) -- (3.5,0.5) node[anchor=-30,pos=0.8]{$\lVert y-x_{0} \rVert$} node [below] {$y$} ++(-0.3,-0.7) node {$\varepsilon$};
+	\draw[fill] (3.5,0.5) circle(2pt);
+\end{tikzpicture}
+  </script>
+</div>
 
             </div>
         </article></main>
@@ -1444,7 +1467,7 @@ In the next lecture we will see another example of normed space similar to $\mat
 
 
     
-    <script async src="http://localhost:38479/js/main.js" ></script>
+    <script async src="http://localhost:1313/js/main.js" ></script>
 
     
 
